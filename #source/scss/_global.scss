@@ -1,0 +1,58 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bgred {
+    background: #FF754A;
+}
+
+.bggreen {
+    background: #698C5C;
+}
+
+.secttitle {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 115%;
+
+    &.secttitle_blue {
+        color: #304078;
+    }
+}
+
+.lmore {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #304078;
+    transition: 0.3s;
+
+    img {
+        margin-left: 6px;
+        max-width: 22px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: #304078;
+
+        img {
+            transform: translateX(5px);
+        }
+    }
+}
