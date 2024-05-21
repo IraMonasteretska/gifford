@@ -25,32 +25,82 @@ $(document).ready(function () {
 
     // slider 2
     var swiper = new Swiper(".learnslider", {
-        slidesPerView: 1.6,
-        spaceBetween: 90,
+        slidesPerView: 1,
+        spaceBetween: 20,
         loop: true,
         centeredSlides: true,
         speed: 800,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
 
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+
+        breakpoints: {
+            576: {
+                slidesPerView: 1.2,
+                spaceBetween: 30,
+              },
+            768: {
+              slidesPerView: 1.2,
+              spaceBetween: 30,
+            },
+            992: {
+              slidesPerView: 1.3,
+              spaceBetween: 50,
+            },
+            1199: {
+                slidesPerView: 1.6,
+                spaceBetween: 90,
+            },
+          },
     });
 
     // graduates slider
     var swiper = new Swiper(".graduates-slider", {
-        slidesPerView: 1.2,
-        spaceBetween: 60,
-        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // loop: true,
+        speed: 800,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
 
+        breakpoints: {
+            576: {
+                slidesPerView: 1.1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1.1,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 1.2,
+                spaceBetween: 60,
+            },
+          },
     });
 
-
+    // menu btn
+    (function() {
+        var burger2;
+        burger2 = document.querySelector(".burger2");
+        burger2.addEventListener("click", function() {
+          return burger2.classList.toggle("on");
+        });
+      
+      }).call(this);
 
 
 })

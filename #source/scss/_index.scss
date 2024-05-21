@@ -25,7 +25,7 @@
             object-position: 50% 50%;
         }
 
-       
+
     }
 
     .swiper-pagination-bullet {
@@ -224,7 +224,7 @@
         height: 90px;
         border: 1px solid #fff;
         background: url('../img/main/play.png') no-repeat center / 100%;
-        
+
 
         svg {
             display: none;
@@ -313,7 +313,7 @@
     }
 }
 
-.learnslider  {
+.learnslider {
     padding-bottom: 100px;
 
     .swiper-slide {
@@ -347,5 +347,439 @@
     padding: 130px 0 160px;
     padding-left: calc((100vw - 1440px) / 2);
     overflow: hidden;
+}
+
+.graduates-slider {
+    padding-top: 100px;
+    overflow: initial;
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: -43px;
+        border-radius: 17px;
+        background: #343434;
+        width: 57px;
+        height: 57px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: calc((100vw - 1440px) / 2);
+        background-image: url('../img/slider-right.svg');
+    }
+
+    .swiper-button-prev {
+        left: initial;
+        right: calc(((100vw - 1440px) / 2) + 70px);
+        background-image: url('../img/slider-left.svg');
+    }
+}
+
+.graduateslide {
+    padding: 33px;
+    border-radius: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .ava {
+        width: 100%;
+        max-width: 264px;
+        flex: 0 0 264px;
+
+        img {
+            width: 100%;
+            border-radius: 35px;
+        }
+    }
+
+    .descr {
+        width: 100%;
+        max-width: calc(100% - 264px);
+        flex: 0 0 calc(100% - 264px);
+        padding-left: 33px;
+        position: relative;
+
+        .name {
+            color: #304078;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 115%;
+        }
+
+        ul {
+            margin: 0 0 33px 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 16px;
+                font-size: 18px;
+                color: #304078;
+                opacity: 0.6;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 140%;
+            color: #304078;
+            margin: 0;
+        }
+
+        .qimg {
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
+    }
+}
+
+.calendarsect {
+    padding: 140px 0 130px;
+
+    .secttitle {
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #fff;
+        max-width: 382px;
+    }
+}
+
+.imgsect {
+    height: 390px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &>img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+
+}
+
+.mainslider .swiper-slide img {
+    min-height: 500px;
+}
+
+
+@media(max-width:1599.8px) {
+    .herosect__descr h1 {
+        font-size: 80px;
+    }
+
+    .herosect__descr h1 .litttext {
+        font-size: 32px;
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .herosect__descr .herosect__descrbtns a {
+        min-height: 52px;
+    }
+
+    .herosect__descr .herosect__descrbtns .fbtn {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .herosect__descr .herosect__descrbtns .sbtn {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .herosect__descr .herosect__descrbtns {
+        max-width: 540px;
+    }
+
+}
+
+@media(max-width:1499.8px) {
+
+    .graduates {
+        padding-left: calc((100vw - 1320px) / 2);
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: calc((100vw - 1320px) / 2);
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: calc((100vw - 1320px) / 2 + 70px);
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .graduates {
+        padding-left: calc((100vw - 1140px) / 2);
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: calc((100vw - 1140px) / 2);
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: calc((100vw - 1140px) / 2 + 70px);
+    }
+
+    .qualification .infbox p {
+        font-size: 20px;
+        flex: 0 0 calc(100% - 60px);
+        max-width: calc(100% - 60px);
+    }
+
+    .qualification .infbox img {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .qualification .infbox {
+        padding: 20px;
+        height: 160px;
+    }
+
+    .learnabout__topsect .descr p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .learnabout__topsect {
+        margin-bottom: 120px;
+    }
+
+    .learnslidewrapper .learnslide__content .rightbox {
+        max-width: 230px;
+        flex: 0 0 230px;
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox {
+        max-width: calc(100% - 230px);
+        flex: 0 0 calc(100% - 230px);
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox .title {
+        font-size: 24px;
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox p {
+        font-size: 16px;
+    }
+
+    .learnslidewrapper .num {
+        margin-bottom: 20px;
+    }
+
+    .learnslider {
+        padding-bottom: 80px;
+    }
+
+    .graduates {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .graduates-slider .swiper-button-next,
+    .graduates-slider .swiper-button-prev {
+        top: -37px;
+    }
+
+    .graduates-slider {
+        padding-top: 70px;
+    }
+
+    .graduateslide .descr p {
+        font-size: 18px;
+    }
+
+    .calendarsect p {
+        font-size: 16px;
+    }
+
+    .imgsect {
+        height: 320px;
+    }
+
+
+
+
+
+
+
+    .learnabout {
+        padding: 100px 0 80px;
+    }
+
+    .videosection,
+    .calendarsect {
+        padding: 100px 0;
+    }
+
+    .qualification {
+        padding: 120px 0;
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+
+    .graduates {
+        padding-left: calc((100vw - 960px) / 2);
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: calc((100vw - 960px) / 2);
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: calc((100vw - 960px) / 2 + 70px);
+    }
+
+
+    .herosect__descr h1 {
+        font-size: 66px;
+    }
+
+    .herosect__descr h1 .litttext {
+        font-size: 28px;
+        line-height: 100%;
+        padding-left: 30px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .herosect__descr h1 {
+        font-size: 70px;
+    }
+
+    .boxeswrap {
+        margin-top: 40px;
+    }
+
+    .learnabout__topsect .descr {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .learnabout .secttitle {
+        margin-bottom: 40px;
+    }
+
+    .learnabout__topsect {
+        margin-bottom: 70px;
+    }
+
+    .graduates {
+        padding-left: calc((100vw - 720px) / 2);
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: calc((100vw - 720px) / 2);
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: calc((100vw - 720px) / 2 + 70px);
+    }
+
+    .graduateslide {
+        padding: 20px;
+    }
+
+    .graduateslide .ava img {
+        border-radius: 15px;
+    }
+
+    .graduateslide .ava {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .graduateslide .descr {
+        max-width: calc(100% - 200px);
+        flex: 0 0 calc(100% - 200px);
+    }
+
+    .graduateslide .descr .qimg {
+        width: 30px;
+    }
+
+    .graduateslide .descr .name {
+        font-size: 26px;
+    }
+
+    .graduateslide .descr ul {
+        margin-bottom: 20px;
+
+        li {
+            font-size: 15px;
+        }
+    }
+
+    .graduateslide .descr p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .calendarsect .secttitle {
+        margin-bottom: 30px;
+    }
+
+    .graduates-slider {
+        padding-top: 50px;
+    }
+
+    .imgsect {
+        height: 260px;
+    }
+
+
+
+    .learnabout__topsect .descr p {
+        font-size: 18px;
+    }
+
+    .qualification .secttitle {
+        margin-bottom: 40px;
+    }
+
+    .qualification {
+        padding: 100px 0;
+    }
+
 }
 

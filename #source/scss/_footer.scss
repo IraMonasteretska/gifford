@@ -171,3 +171,62 @@
 
 
 }
+
+@media(max-width:1399.8px) {
+    .footerlistswrapper .footer__rsect>p {
+        font-size: 15px;
+    }
+
+    .footerlistswrapper .footer__courses {
+        padding-right: 30px;
+    }
+
+    .footerlistswrapper .footer__courses ul li a,
+    .footerlistswrapper .footer__rsect .footlistgroup .footlist>a {
+        font-size: 16px;
+    }
+
+    .footerlistswrapper .footer__rsect .footlistgroup .footlist ul li,
+    .footerlistswrapper .footer__courses ul li {
+        margin-bottom: 15px;
+    }
+
+    .footerlistswrapper .footer__rsect>p {
+        margin-top: 40px;
+    }
+
+    .footerlistswrapper .footer__rsect {
+        padding-right: 30px;
+    }
+
+
+
+
+}
+
+@media(max-width:1199.8px) {
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footerlogo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+    .footer__btns {
+        justify-content: flex-start;
+        display: flex;
+        padding-top: 50px;
+
+        a {
+            margin-right: 30px;
+        }
+    }
+}
+
