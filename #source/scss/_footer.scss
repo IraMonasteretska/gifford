@@ -172,6 +172,33 @@
 
 }
 
+.footerlistswrapper .footer__courses ul li a,
+.footerlistswrapper .footer__rsect .footlistgroup .footlist ul li a,
+.footerlistswrapper .footer__rsect .footlistgroup .footlist>a {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer__btns {
+    a {
+        transition: 0.3s;
+
+        &:hover {
+            background: #FF754A;
+        }
+
+        &:nth-child(2) {
+            &:hover {
+                background: #ff6838;
+                box-shadow: 0 10px 10px rgba(255, 117, 74, 0.3490196078);
+            }
+        }
+    }
+}
+
 @media(max-width:1399.8px) {
     .footerlistswrapper .footer__rsect>p {
         font-size: 15px;
@@ -230,3 +257,40 @@
     }
 }
 
+@media(max-width:767.8px) {
+    .footerlistswrapper .footer__courses {
+        padding-right: 15px;
+    }
+
+    .footerlistswrapper .footer__rsect {
+        padding-right: 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .footerlistswrapper .footer__courses {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footerlistswrapper .footer__rsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer__btns {
+        padding-top: 30px;
+    }
+
+    .footer__btns {
+        justify-content: space-between;
+
+        a {
+            margin: 0;
+            width: calc(50% - 10px);
+        }
+    }
+
+
+}

@@ -151,6 +151,12 @@
             flex: 0 0 331px;
             background: #FF754A;
             border: 1px solid #FF754A;
+            transition: 0.3s;
+
+            &:hover {
+                background: #ff6838;
+                box-shadow: 0 10px 10px #ff754a59;
+            }
         }
 
         .sbtn {
@@ -159,6 +165,11 @@
             flex: 0 0 211px;
             background: rgba(#FF754A, 0.5);
             border: 1px solid rgba(#FF754A, 0.5);
+            transition: 0.3s;
+
+            &:hover {
+                background: #FF754A;
+            }
         }
     }
 
@@ -783,3 +794,282 @@
 
 }
 
+@media(max-width:767.8px) {
+    .learnslidewrapper .learnslide__content .rightbox {
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox {
+        max-width: calc(100% - 150px);
+        flex: 0 0 calc(100% - 150px);
+        padding-right: 20px;
+    }
+
+    .learnslidewrapper .num {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox p {
+        font-size: 15px;
+    }
+
+    .herosect__descr h1 {
+        font-size: 55px;
+    }
+
+    .herosect__descr h1 .litttext {
+        font-size: 24px;
+        max-width: 160px;
+        flex: 0 0 160px;
+        padding-left: 20px;
+    }
+
+    .herosect__descr h1 .maintext {
+        max-width: calc(100% - 160px);
+        flex: 0 0 calc(100% - 160px);
+    }
+
+    .herosect__descr .herosect__descrbtns a {
+        font-size: 18px;
+    }
+
+    .herosect__descr .herosect__descrbtns .fbtn {
+        max-width: 260px;
+        flex: 0 0 260px;
+    }
+
+    .herosect__descr .herosect__descrbtns {
+        max-width: 470px;
+    }
+
+    .herosect .el2 {
+        width: 100px;
+        left: 50px;
+    }
+
+    .qualification .infbox p {
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+    .qualification .infbox {
+        height: 140px;
+    }
+
+    .learnslider {
+        padding-bottom: 60px;
+    }
+
+    .graduates {
+        padding-left: calc((100vw - 540px) / 2);
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: calc((100vw - 540px) / 2);
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: calc((100vw - 540px) / 2 + 70px);
+    }
+
+    .graduates-slider .swiper-button-next,
+    .graduates-slider .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        top: -32px;
+    }
+
+    .graduates {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+
+
+
+
+    .qualification .secttitle,
+    .learnabout .secttitle,
+    .calendarsect .secttitle {
+        margin-bottom: 20px;
+    }
+
+    .qualification,
+    .calendarsect,
+    .videosection,
+    .learnabout {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .qualification .infbox {
+        max-width: 100%;
+        flex: 0 0 100%;
+        border-right: none !important;
+
+        &:last-child {
+            border-bottom: 1px solid rgba(48, 64, 120, 0.4);
+        }
+    }
+
+    .herosect__descr {
+        padding-top: 50px;
+    }
+
+    .herosect__descr h1 {
+        font-size: 45px;
+    }
+
+    .herosect__descr h1 .litttext {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    .herosect__descr .herosect__descrbtns .fbtn {
+        margin-bottom: 20px;
+    }
+
+    .lmore {
+        font-size: 16px;
+    }
+
+    .qualification .infbox {
+        padding: 10px;
+        height: auto;
+        min-height: 100px;
+    }
+
+    .learnabout__topsect .descr p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .learnabout__topsect {
+        margin-bottom: 40px;
+    }
+
+    .learnslider {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 40px;
+    }
+
+    .learnslidewrapper .learnslide__content .rightbox {
+        order: 1;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-bottom: 20px;
+
+        img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+    .learnslidewrapper .learnslide__content .leftbox {
+        order: 2;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+
+    .graduates {
+        padding: 60px 12px;
+    }
+
+    .graduates-slider .swiper-button-next,
+    .graduates-slider .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        top: 40px;
+    }
+
+    .graduates-slider .swiper-button-prev {
+        right: initial;
+        left: 0;
+    }
+
+    .graduates-slider .swiper-button-next {
+        right: initial;
+        left: 50px;
+    }
+
+    .graduates-slider {
+        padding-top: 80px;
+    }
+
+    .graduateslide .ava,
+    .graduateslide .descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .graduateslide {
+        padding: 10px 10px 20px 10px;
+
+        .ava {
+            margin-bottom: 20px;
+
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .graduateslide .descr {
+        padding-left: 0;
+    }
+
+    .graduateslide .descr .qimg {
+        display: none;
+    }
+
+    .imgsect {
+        .secttitle {
+            margin: 0;
+        }
+    }
+
+    .imgsect {
+        height: 210px;
+    }
+
+    
+
+
+
+}
+
+@media(max-width:360.8px) {
+
+    .herosect__descr h1 {
+        font-size: 40px;
+    }
+
+    .herosect__descr h1 .litttext {
+        max-width: 130px;
+        padding-left: 0;
+    }
+
+    .herosect__descr h1 .maintext {
+        max-width: calc(100% - 130px);
+        flex: 0 0 calc(100% - 130px);
+    }
+
+    .imgsect .secttitle br {
+        display: none;
+    }
+
+}

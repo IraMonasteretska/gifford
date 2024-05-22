@@ -204,7 +204,7 @@
     }
 
     .header__switcher span.active {
-        color: rgb(96 96 96);
+        // color: rgb(96 96 96);
     }
 
     .header__rightsect nav>ul>li>a {
@@ -292,6 +292,71 @@
     display: none;
 }
 
+.header__btns a {
+    &:hover {
+        border: 1px solid #FF754A;
+        background: #FF754A;
+    }
+}
+
+.header__switcher span:not(.active) {
+    transition: 0.3s;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+header.header.white {
+    box-shadow: 0 4px 14px rgba(#000, 0.09);
+
+    .header__rightsect nav>ul>li>a {
+        color: #A3A3A3;
+    }
+
+    .header__switcher span {
+        color: rgba(#343434, 0.45);
+    }
+
+    .header__switcher span.active {
+        color: #304078;
+    }
+
+    .switchel label {
+        background: #304078;
+    }
+
+    .header__rightsect .header__btns {
+        .enrolbtn {
+            background: #fff;
+            border: 1px solid #304078;
+            color: #304078;
+
+            &:hover {
+                color: #fff;
+                background: #304078;
+            }
+        }
+
+        .logbtn {
+            background: rgba(#304078, 0.5);
+            color: #304078;
+
+            &:hover {
+                border: 1px solid #304078;
+                background: #304078;
+                color: #fff;
+            }
+        }
+    }
+
+    &.change-bg {
+        background: #fff;
+    }
+
+}
+
+
 @media(max-width:1440.8px) {
 
     .header__rightsect .header__btns {
@@ -342,7 +407,95 @@
 @media(max-width:1199.8px) {
 
     .adaptmenu {
-        display: none;
+        // display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 500px;
+        height: 100vh;
+        background: rgba(36, 36, 36, 0.99);
+        transform: translateX(500px);
+        transition: 0.5s;
+
+        &.show {
+            transform: translateX(0);
+        }
+
+        .header__rightsect {
+            display: block;
+            padding: 100px 15px 35px 15px;
+        }
+
+        .header__rightsect nav {
+            max-width: 100%;
+
+            ul {
+                padding: 0;
+
+                li {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+
+                    a {
+                        padding: 0;
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .megamenu {
+                opacity: 1;
+                z-index: 1;
+                visibility: visible;
+                transform: translateY(0);
+                position: relative;
+                top: 0;
+
+                .megamenuwrap {
+                    padding: 15px 0 0 0;
+                    background: transparent;
+                    border-radius: 0;
+                    backdrop-filter: none;
+                }
+
+                .megamenu__link {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+
+                    img {
+                        // display: none;
+                        max-width: 50px;
+                        flex: 0 0 50px;
+                    }
+
+                    p {
+                        color: rgba(#fff, 0.7);
+                        max-width: calc(100% - 50px);
+                        flex: 0 0 calc(100% - 50px);
+
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .megamenu__link p {
+                    // max-width: 100%;
+                    // flex: 0 0 100%;
+                }
+            }
+        }
+    }
+
+    .header.change-bg .header__rightsect nav>ul>li>a {
+        padding: 0;
+    }
+
+    .header__switcher {
+        margin-bottom: 30px;
     }
 
     .header {
@@ -453,6 +606,35 @@
 
     }
 
+    .header__rightsect nav>ul>li:after {
+        display: none !important;
+    }
+
+    .header__btns a {
+        border: 1px solid #FF754A;
+
+        &.logbtn {
+            background: #FF754A;
+        }
+    }
+
+    .adaptmenu {
+        overflow: auto;
+    }
+
+    header.header.white {
+
+        button.burger.burger2 span,
+        button.burger.burger2:after,
+        button.burger.burger2:before,
+        button.burger.burger2 span:before {
+            background: #304078;
+        }
+    }
+
+
+
+
 }
 
 @media(max-width:991.8px) {
@@ -468,3 +650,34 @@
 
 }
 
+@media(max-width:575.8px) {
+    .header__logo img {
+        max-width: 160px;
+    }
+
+    button.burger {
+        top: 6px;
+    }
+
+    .adaptmenu {
+        width: 100%;
+    }
+
+    .adaptmenu .header__rightsect nav ul li a {
+        font-size: 16px;
+    }
+
+    .adaptmenu .header__rightsect {
+        display: block;
+        padding: 80px 0 10px 0;
+    }
+
+    .megamenu .container {
+        padding: 0 0 0 15px;
+    }
+
+    .adaptmenu {
+        transform: translateX(100%);
+    }
+
+}
