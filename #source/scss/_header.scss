@@ -630,9 +630,33 @@ header.header.white {
         button.burger.burger2 span:before {
             background: #304078;
         }
+
+        .burger.burger2.on {
+            span, &::after, &::before {
+                background: #fff;
+            }
+
+            span:before {
+                background: #fff;
+            }
+        }
+    }
+
+    header.header.white .header__rightsect .header__btns .logbtn {
+        background:#fff;
+        border-color: #304078;
     }
 
 
+    header.header.white .header__switcher span {
+        color: rgba(#fff, 0.5);
+    }
+
+    header.header.white .header__switcher span.active {
+        color: #fff;
+    }
+
+    
 
 
 }

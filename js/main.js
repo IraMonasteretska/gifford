@@ -44,20 +44,20 @@ $(document).ready(function () {
             576: {
                 slidesPerView: 1.2,
                 spaceBetween: 30,
-              },
+            },
             768: {
-              slidesPerView: 1.2,
-              spaceBetween: 30,
+                slidesPerView: 1.2,
+                spaceBetween: 30,
             },
             992: {
-              slidesPerView: 1.3,
-              spaceBetween: 50,
+                slidesPerView: 1.3,
+                spaceBetween: 50,
             },
             1199: {
                 slidesPerView: 1.6,
                 spaceBetween: 90,
             },
-          },
+        },
     });
 
     // graduates slider
@@ -89,18 +89,39 @@ $(document).ready(function () {
                 slidesPerView: 1.2,
                 spaceBetween: 60,
             },
-          },
+        },
     });
 
     // menu btn
-    (function() {
+    (function () {
         var burger2;
         burger2 = document.querySelector(".burger2");
-        burger2.addEventListener("click", function() {
-          return burger2.classList.toggle("on");
+        burger2.addEventListener("click", function () {
+            return burger2.classList.toggle("on");
         });
-      
-      }).call(this);
+
+    }).call(this);
+
+    $('.burger').click(function(){
+        $('.adaptmenu').toggleClass('show');
+    })
+
+    // accordeon
+    $('.accordeon__header').click(function(){
+        $('.accordeon__header').not($(this)).removeClass('active');
+        $(this).toggleClass('active');
+
+        $('.accordeon__body').not($(this).next('.accordeon__body')).slideUp();
+        $(this).next('.accordeon__body').slideToggle();
+    });
+
+
+
+
+
+
+
+
 
 
 })

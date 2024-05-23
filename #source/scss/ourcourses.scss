@@ -187,3 +187,386 @@
 
 
 
+
+
+
+// ------------------
+
+.qsect__descr {
+    width: 100%;
+    max-width: calc(100% - 335px);
+    flex: 0 0 calc(100% - 335px);
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        max-width: 416px;
+        color: rgba(#fff, 0.6);
+        font-size: 17px;
+        line-height: 140%;
+        margin: 0;
+    }
+}
+
+.qsect__btns {
+    width: 100%;
+    max-width: 335px;
+    flex: 0 0 335px;
+    text-align: right;
+}
+
+.sheduleblock {
+    padding: 90px 0;
+    background: #FF754A;
+    text-align: center;
+    position: relative;
+
+    .secttitle {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
+        color: rgba(#fff, 0.85);
+        line-height: 140%;
+        font-size: 20px;
+    }
+
+    .el1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .el2 {
+        position: absolute;
+        top: 0;
+        right: 36px;
+    }
+
+    .el3 {
+        position: absolute;
+        bottom: 0;
+        left: 36px;
+    }
+
+    .el4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+
+}
+
+@media(max-width:1599.8px) {
+
+    .titlesection h1 {
+        font-size: 70px;
+
+        span {
+            font-size: 36px;
+        }
+    }
+
+    .titlesection .descr {
+        padding-left: 0;
+    }
+
+    .coursesrow__title {
+        padding-left: 100px;
+    }
+
+    .coursesrow__descr {
+        padding-right: 100px;
+    }
+
+    .sheduleblock p {
+        margin-bottom: 30px;
+    }
+
+    .sheduleblock {
+        padding: 70px 0;
+    }
+
+
+    .coursesrow__title .title {
+        font-size: 28px;
+    }
+
+
+
+}
+
+@media(max-width:1399.8px) {
+
+    .titlesection .descr p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .coursesrow__img {
+        max-width: 200px;
+        flex: 0 0 200px;
+    }
+
+    .coursesrow__title {
+        max-width: 38%;
+        flex: 0 0 38%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .coursesrow__descr {
+        max-width: calc(62% - 254px);
+        flex: 0 0 calc(62% - 254px);
+    }
+
+    .coursesrow__title .title {
+        font-size: 26px;
+    }
+
+    .qsect__descr h3 {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:1199.8px) {
+
+    .coursesrow__title .title br {
+        display: none;
+    }
+
+    .coursesrow__title .title {
+        font-size: 23px;
+    }
+
+    .qsect {
+        padding: 80px 0;
+    }
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .titlesection h1 {
+        margin-bottom: 30px;
+    }
+
+    .titlesection .bgel {
+        max-width: 100px;
+    }
+
+    .coursesrow {
+        flex-wrap: wrap;
+    }
+
+    .coursesrow__title,
+    .coursesrow__descr,
+    .coursesrow__arrow,
+    .coursesrow__img {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .coursesrow__img {
+        margin-bottom: 10px;
+        
+        img {
+            max-width: 160px;
+        }
+    }
+
+    .coursesrow__title .title {
+        margin-bottom: 20px;
+    }
+
+    .coursesrow__descr {
+        margin-bottom: 20px;
+    }
+
+    .coursesrow__arrow img {
+        max-width: 45px;
+    }
+
+    .coursesrow__arrow {
+        text-align: right;
+    }
+
+    .coursesrow {
+        padding: 30px 0;
+    }
+
+    .qsect__descr h3 br {
+        display: none;
+    }
+
+    .qsect__btns {
+        max-width: 260px;
+        flex: 0 0 260px;
+    }
+
+    .qsect__descr {
+        max-width: calc(100% - 260px);
+        flex: 0 0 calc(100% - 260px);
+        padding-right: 30px;
+    }
+
+    .sheduleblock .el2 {
+        max-width: 100px;
+        right: 10px;
+    }
+
+    .sheduleblock .el3 {
+        left: 10px;
+        max-width: 100px;
+    }
+
+    .sheduleblock p {
+        font-size: 18px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .titlesection h1 {
+        font-size: 55px;
+
+        span {
+            font-size: 34px;
+        }
+    }
+
+    .titlesection {
+        padding: 60px 0;
+    }
+
+    .titlesection .bgel {
+        max-width: 70px;
+    }
+
+    .courseslist {
+        padding: 60px 0;
+    }
+
+    .qsect__row {
+        flex-wrap: wrap;
+    }
+
+    .qsect__descr {
+        padding: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .qsect__descr h3 {
+        margin-bottom: 10px;
+    }
+
+    .sheduleblock .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .sheduleblock .el2,
+    .sheduleblock .el3,
+    .sheduleblock .el1,
+    .sheduleblock .el4 {
+        max-width: 70px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px)  {
+    .titlesection h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+
+        span {
+            font-size: 31px;
+        }
+    }
+
+    .coursesrow__img img {
+        max-width: 100px;
+    }
+
+    .coursesrow__title .count {
+        font-size: 16px;
+    }
+
+    .coursesrow__descr p {
+        font-size: 16px;
+    }
+
+    .coursesrow__title .title {
+        margin-bottom: 10px;
+    }
+
+    .coursesrow__arrow img {
+        transform: translateX(0) !important;
+        max-width: 35px;
+    }
+
+    .coursesrow__descr {
+        margin-bottom: 10px;
+    }
+
+    .coursesrow {
+        padding: 20px 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .courseslist .el1 {
+        max-width: 60px;
+    }
+
+    .qsect {
+        padding: 60px 0;
+    }
+
+    .qsect__btns {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+        a {
+            max-width: 100%;
+        }
+    }
+
+    .qsect__row .qsect__btns a:first-child {
+        margin-bottom: 20px;
+    }
+
+    .sheduleblock .el1, .sheduleblock .el2, .sheduleblock .el3, .sheduleblock .el4 {
+        max-width: 50px;
+    }
+
+
+
+    .qsect__descr p,
+    .sheduleblock p {
+        font-size: 16px;
+    }
+}
