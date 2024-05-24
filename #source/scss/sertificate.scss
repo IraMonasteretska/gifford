@@ -154,7 +154,7 @@
         &:nth-last-child(2) {
             border-bottom: none;
         }
-        
+
     }
 }
 
@@ -208,6 +208,7 @@
     .accordeon__body {
         padding-left: 93px;
         padding-bottom: 40px;
+        display: none;
 
         .descr {
             max-width: calc(100% - 260px);
@@ -226,4 +227,712 @@
 
 }
 
-// ---------------------------------------------------
+.pusic {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(#151515, 0.2);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        background: #304078;
+        transition: 0.3s;
+        position: absolute;
+
+        &:nth-child(2) {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.accordeon__header.active {
+    .pusic span:nth-child(2) {
+        transform: rotate(0);
+    }
+}
+
+.coursedescription__btn {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+
+    .arr {
+        margin-right: 50px;
+        max-width: 35px;
+    }
+
+    .redbtn {
+        max-width: 268px;
+        font-family: "Inter Tight", sans-serif;
+    }
+}
+
+.careerinsights {
+    background: #304078;
+    padding: 130px 0 80px;
+}
+
+.careerinsights__top {
+    margin-bottom: 80px;
+
+    .secttitle {
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+        max-width: 350px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            font-size: 20px;
+            line-height: 110%;
+            color: #fff;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 1px;
+                width: 10px;
+                display: inline-block;
+                background: #FF754A;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+    }
+
+}
+
+.careerslider {
+    padding-bottom: 50px;
+
+    .swiper-slide {
+        width: 64.666%;
+
+        &.small {
+            width: 33.333%;
+        }
+    }
+
+    .imgwrap {
+        height: 480px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #EAEAEA;
+            opacity: 0.3;
+            transition: 0.3s;
+            margin: 0 7px;
+
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.careerinsights__bott {
+    margin-top: 120px;
+}
+
+.carbotbox {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(#75C7D9, 0.3);
+    border-right: 1px solid rgba(#75C7D9, 0.3);
+    padding: 0 25px 30px 25px;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 100px;
+        flex: 0 0 100px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .descr {
+        width: 100%;
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+        padding-left: 25px;
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .title {
+            margin-bottom: 10px;
+            color: #FF754A;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 100%;
+        }
+    }
+}
+
+.col-lg-4:last-child .carbotbox {
+    border-right: none;
+}
+
+.coursestruc {
+    padding: 150px 0 130px;
+}
+
+.coursestruc__top-descr {
+    text-align: right;
+
+    p {
+        max-width: 470px;
+        display: inline-block;
+        font-size: 17px;
+        text-align: left;
+        color: rgba(#151515, 0.6);
+    }
+}
+
+.coursestruc__top {
+    margin-bottom: 90px;
+}
+
+.coursestruc {
+    .coreunits__title {
+        margin-bottom: 70px;
+
+        p {
+            font-size: 17px;
+            line-height: 140%;
+            color: rgba(#151515, 0.6);
+            margin: 0;
+        }
+
+        .title {
+            margin-bottom: 30px;
+            color: #698C5C;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 115%;
+            font-size: 30px;
+        }
+    }
+
+    .tab-item {
+        display: none;
+
+        &.active-tab {
+            display: block;
+        }
+    }
+
+    .tab {
+
+        .tabname {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 120px;
+            border-bottom: 1px solid rgba(#304078, 0.6);
+            border-right: 1px solid rgba(#304078, 0.6);
+            padding: 15px 0;
+            cursor: pointer;
+
+            span {
+                width: 100%;
+                max-width: 178px;
+                flex: 0 0 178px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+                color: #304078;
+                min-height: 42px;
+                padding: 4px;
+                border-radius: 80px;
+                border: 1px solid #304078;
+                opacity: 0.2;
+                transition: 0.3s;
+            }
+
+            p {
+                width: 100%;
+                max-width: calc(100% - 178px);
+                flex: 0 0 calc(100% - 178px);
+                padding-left: 24px;
+                font-size: 30px;
+                font-weight: 500;
+                color: #454545;
+                margin: 0;
+                opacity: 0.2;
+                transition: 0.3s;
+            }
+        }
+
+        &.active {
+
+            span {
+                opacity: 1;
+            }
+
+            p {
+                color: #304078;
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .tab_content {
+        position: sticky;
+        top: 110px;
+    }
+
+}
+
+.tabinfowrapper {
+    padding-left: 35px;
+}
+
+.teacherheader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 105px;
+        flex: 0 0 105px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .teacherinfo {
+        width: 100%;
+        max-width: calc(100% - 105px);
+        flex: 0 0 calc(100% - 105px);
+        padding-left: 24px;
+
+        p {
+            margin: 0;
+            color: rgba(#000, 0.4);
+            font-size: 15px;
+            max-width: 265px;
+        }
+
+        .name {
+            margin-bottom: 16px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #454545;
+            line-height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.textbox {
+    margin-bottom: 65px;
+
+    .title {
+        margin-bottom: 20px;
+        color: #454545;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    ul,
+    ol,
+    p {
+        margin: 0;
+        font-size: 17px;
+        line-height: 120%;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    ol,
+    ul {
+        padding-left: 22px;
+    }
+
+
+}
+
+.teacherbody {
+    .redbtn {
+        max-width: 187px;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 16px;
+        min-height: 46px;
+    }
+}
+
+.coreunits {
+    margin-bottom: 95px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.payment-info {
+    padding: 130px 0;
+    background: #F2ABA3;
+
+    .imgwrap {
+        img {
+            width: 100%;
+        }
+    }
+
+    .descrbox {
+        padding-left: 60px;
+
+
+        .secttitle {
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 140%;
+            color: rgba(#151515, 0.6);
+            margin-bottom: 30px;
+        }
+
+        .linetext {
+            padding-left: 18px;
+            position: relative;
+            border-left: 1px solid #F05C61;
+            margin-bottom: 35px;
+
+            p.title {
+                margin-bottom: 20px;
+                color: #F05C61;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 115%;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+
+    }
+}
+
+.carbotbox {
+    height: 100%;
+}
+
+@media(max-width:1599.8px) {
+
+    .getstartedicwrap .getstartedicbox img {
+        height: 80px;
+    }
+
+    .getstartedicwrap .getstartedicbox {
+        padding: 25px;
+    }
+
+    .coursedescription .secttitle {
+        margin-bottom: 50px;
+    }
+
+    .accordeonrow .accordeon__header {
+        min-height: 100px;
+    }
+
+    .careerinsights {
+        padding: 100px 0 80px;
+    }
+
+    .careerinsights__top ul li {
+        font-size: 18px;
+    }
+
+    .careerinsights__top {
+        margin-bottom: 50px;
+    }
+
+    .careerslider .imgwrap {
+        height: 400px;
+    }
+
+    .careerinsights__bott {
+        margin-top: 80px;
+    }
+
+    .carbotbox .imgwrap {
+        max-width: 75px;
+        flex: 0 0 75px;
+    }
+
+    .carbotbox .descr {
+        max-width: calc(100% - 75px);
+        flex: 0 0 calc(100% - 75px);
+    }
+
+    .coursestruc .tab .tabname span {
+        max-width: 160px;
+        flex: 0 0 160px;
+    }
+
+    .coursestruc .tab .tabname p {
+        max-width: calc(100% - 160px);
+        flex: 0 0 calc(100% - 160px);
+    }
+
+    .coursestruc .tab .tabname span {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .sertgetstarted,
+    .videosection,
+    .coursedescription,
+    .coursestruc,
+    .payment-info {
+        padding: 100px 0;
+    }
+
+    .accordeonrow .accordeon__header p,
+    .coursestruc .tab .tabname p {
+        font-size: 25px;
+    }
+
+    .getstartedicwrap .getstartedicbox .title,
+    .carbotbox .descr .title {
+        font-size: 21px;
+    }
+
+    .sertificate__herosect ul li {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .sertificate__herosect h1 {
+        font-size: 56px;
+    }
+
+    .sertificate__herosect {
+        min-height: 500px;
+    }
+
+    .sertificate__herosect ul li {
+        font-size: 15px;
+        padding: 0 20px 0 15px;
+    }
+
+    .sertheroel1,
+    .sertheroel2 {
+        width: 80px;
+    }
+
+    .sertgetstarted .descr {
+        margin-bottom: 40px;
+    }
+
+    .getstartedicwrap .getstartedicbox {
+        padding: 15px;
+    }
+
+    .accordeonrow .accordeon__body .descr {
+        font-size: 16px;
+        max-width: calc(100% - 160px);
+    }
+
+    .careerinsights__top ul li {
+        margin-bottom: 10px;
+    }
+
+    .careerinsights__top {
+        margin-bottom: 30px;
+    }
+
+    .careerslider .imgwrap {
+        height: 320px;
+    }
+
+    .carbotbox .descr .title {
+        font-size: 18px;
+    }
+
+    .carbotbox .descr p {
+        font-size: 14px;
+    }
+
+    .carbotbox .descr {
+        padding-left: 15px;
+    }
+
+    .carbotbox {
+        padding: 0 15px 15px 15px;
+    }
+
+    .coursestruc__top {
+        margin-bottom: 50px;
+    }
+
+    .coursestruc .coreunits__title .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .coursestruc .coreunits__title p {
+        font-size: 16px;
+    }
+
+    .coursestruc .coreunits__title {
+        margin-bottom: 50px;
+    }
+
+    .teacherheader .teacherinfo .name {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .teacherheader .imgwrap {
+        max-width: 80px;
+        flex: 0 0 80px;
+    }
+
+    .teacherheader .teacherinfo {
+        max-width: calc(100% - 80px);
+        flex: 0 0 calc(100% - 80px);
+    }
+
+    .teacherheader {
+        margin-bottom: 30px;
+    }
+    
+    .textbox li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .textbox {
+        margin-bottom: 40px;
+    }
+
+    .coursestruc .tab .tabname span {
+        max-width: 140px;
+        flex: 0 0 140px;
+        font-size: 13px;
+        min-height: 36px;
+    }
+
+    .coursestruc .tab .tabname p {
+        max-width: calc(100% - 140px);
+        flex: 0 0 calc(100% - 140px);
+    }
+
+    .coursestruc .tab .tabname p {
+        font-size: 21px;
+    }
+
+    .coursestruc .tab .tabname {
+        min-height: 90px;
+    }
+
+    .coursestruc .tab .tabname p {
+        padding-left: 15px;
+    }
+
+    .payment-info .descrbox .linetext p.title {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .payment-info .descrbox {
+        padding-left: 0;
+    }
+
+    .payment-info {
+        .row {
+            align-items: flex-start !important;
+        }
+    }
+
+    .payment-info .descrbox p:last-child {
+        margin-bottom: 0;
+    }
+
+
+    .getstartedicwrap .getstartedicbox .title {
+        font-size: 20px;
+    }
+
+    .sertgetstarted .descr p,
+    .careerinsights__top p,
+    .careerinsights__top ul li,
+    .coursestruc__top-descr p,
+    .payment-info .descrbox p {
+        font-size: 16px;
+    }
+
+    .getstartedicwrap .getstartedicbox p {
+        font-size: 14px;
+    }
+
+}

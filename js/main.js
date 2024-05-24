@@ -102,12 +102,12 @@ $(document).ready(function () {
 
     }).call(this);
 
-    $('.burger').click(function(){
+    $('.burger').click(function () {
         $('.adaptmenu').toggleClass('show');
     })
 
     // accordeon
-    $('.accordeon__header').click(function(){
+    $('.accordeon__header').click(function () {
         $('.accordeon__header').not($(this)).removeClass('active');
         $(this).toggleClass('active');
 
@@ -115,10 +115,41 @@ $(document).ready(function () {
         $(this).next('.accordeon__body').slideToggle();
     });
 
+    // career slider
+    var swiper = new Swiper(".careerslider", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        speed: 800,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 
 
+    // tabs
+    $('.wrapper1 .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.wrapper1').find('.tab-item').removeClass('active-tab').hide();
+        $('.wrapper1 .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
 
-
+    $('.wrapper2 .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.wrapper2').find('.tab-item').removeClass('active-tab').hide();
+        $('.wrapper2 .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
 
 
 
