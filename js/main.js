@@ -151,14 +151,46 @@ $(document).ready(function () {
         return false;
     });
 
+    // test
+    if ($(window).width() < 576) {
+        const tabs = document.querySelectorAll('.wrapper1 .tab');
+        const tabItems = document.querySelectorAll('.wrapper1 .tab-item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const id = this.dataset.id;
+
+                tabs.forEach(t => t.classList.remove('active'));
+                tabItems.forEach(item => item.classList.remove('active-tab'));
+
+                this.classList.add('active');
+                document.getElementById(id).classList.add('active-tab');
+
+                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
 
 
+        const tabs2 = document.querySelectorAll('.wrapper2 .tab');
+        const tabItems2 = document.querySelectorAll('.wrapper2 .tab-item');
+
+        tabs2.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const id = this.dataset.id;
+
+                tabs2.forEach(t => t.classList.remove('active'));
+                tabItems2.forEach(item => item.classList.remove('active-tab'));
+
+                this.classList.add('active');
+                document.getElementById(id).classList.add('active-tab');
+
+                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    }
 
 
 })
-
-
-
 
 
 

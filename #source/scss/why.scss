@@ -1,0 +1,131 @@
+.sertificate__herosect.why {
+    .subtitle {
+        font-size: 25px;
+        color: #fff;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    .redbtn {
+        max-width: 268px;
+        font-family: "Inter Tight", sans-serif;
+    }
+}
+
+.sertgetstarted.why {
+    .getstartedicbox {
+        padding-bottom: 65px;
+    }
+}
+
+.learnsupp {
+    background: #304078;
+    padding: 100px 0 32px;
+
+    .secttitle {
+        margin-bottom: 40px;
+    }
+
+    .learnsupp__leftsect {
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            margin-bottom: 50px;
+            color: #fff;
+            max-width: 475px;
+        }
+
+        .redbtn {
+            max-width: 268px;
+            font-family: "Inter Tight", sans-serif;
+        }
+    }
+
+
+}
+
+.learnsupp__lists {
+    .listblock {
+        margin-bottom: 100px;
+
+        p {
+            padding-left: 83px;
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+        }
+
+        .title {
+            position: relative;
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            color: #F05C61;
+            line-height: 115%;
+
+            img {
+                position: absolute;
+                left: 0;
+                width: 58px;
+                top: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+
+    .sertgetstarted.why .getstartedicbox {
+        padding-bottom: 50px;
+    }
+
+    .learnsupp__lists .listblock {
+        margin-bottom: 80px;
+    }
+
+    .learnsupp__lists .listblock p {
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .learnsupp__lists .listblock .title img {
+        width: 50px;
+    }
+
+    .learnsupp__lists .listblock p {
+        padding-left: 65px;
+    }
+
+    .learnsupp__lists .listblock .title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .learnsupp__lists .listblock p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .learnsupp .learnsupp__leftsect p {
+        max-width: 100%;
+    }
+
+    .learnsupp {
+        padding: 100px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+
+}

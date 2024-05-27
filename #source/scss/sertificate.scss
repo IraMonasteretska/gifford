@@ -673,6 +673,30 @@
     height: 100%;
 }
 
+.redbtn.mob {
+    display: none;
+}
+
+.accordeonrow .accordeon__header p {
+    padding-right: 50px;
+}
+
+.coursestruc .tab:last-child .tabname {
+    border-bottom: none;
+}
+
+.coursestruc .tab .tabname {
+    border-right: none;
+} 
+
+.tabs {
+    border-right: 1px solid rgba(48, 64, 120, 0.6);
+    min-height: 100%;
+}
+
+
+// border-right: 1px solid rgba(48, 64, 120, 0.6);
+
 @media(max-width:1599.8px) {
 
     .getstartedicwrap .getstartedicbox img {
@@ -865,7 +889,7 @@
     .teacherheader {
         margin-bottom: 30px;
     }
-    
+
     .textbox li {
         font-size: 16px;
         margin-bottom: 10px;
@@ -934,5 +958,343 @@
     .getstartedicwrap .getstartedicbox p {
         font-size: 14px;
     }
+
+}
+
+@media(max-width:991.8px) {
+
+    .sertificate__herosect h1 {
+        margin-bottom: 40px;
+        font-size: 50px;
+    }
+
+    .sertgetstarted .secttitle,
+    .sertgetstarted .descr p {
+        max-width: 100%;
+    }
+
+    .redbtn.mob {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .redbtn.desktop {
+        display: none;
+    }
+
+    .getstartedicwrap {
+        margin-bottom: 50px;
+    }
+
+    .accordeonrow .accordeon__header .count {
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .accordeonrow .accordeon__header p {
+        max-width: calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+    }
+
+    .accordeonrow .accordeon__body {
+        padding-left: 60px;
+    }
+
+    .careerinsights {
+        .secttitle {
+            margin-bottom: 20px;
+        }
+    }
+
+    .careerinsights__top p {
+        margin-bottom: 15px;
+    }
+
+    .careerslider .imgwrap {
+        height: 280px;
+    }
+
+    .carbotbox {
+        border-right: none;
+        padding: 20px 0;
+    }
+
+    .careerinsights__bott {
+        margin-top: 40px;
+    }
+
+    .coursestruc__top-descr p {
+        max-width: 100%;
+    }
+
+    .coursestruc .secttitle {
+        margin-bottom: 20px;
+    }
+
+    .coursestruc__top {
+        margin-bottom: 20px;
+    }
+
+    .coursestruc .coreunits__title {
+        margin-bottom: 30px;
+    }
+
+    .coursestruc .tab .tabname {
+        display: block;
+    }
+
+    .coursestruc .tab .tabname span {
+        margin-bottom: 10px;
+        max-width: initial;
+        display: inline-flex;
+        width: auto;
+        padding: 4px 15px;
+    }
+
+    .coursestruc .tab .tabname p {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .tabinfowrapper {
+        padding-left: 0;
+    }
+
+    .coursestruc .tab .tabname p {
+        font-size: 18px;
+    }
+
+    .payment-info {
+        .imgwrap {
+            margin-bottom: 30px;
+        }
+    }
+
+    .payment-info .descrbox .secttitle {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .sertificate__herosect ul {
+        flex-wrap: wrap;
+
+        li {
+            margin-bottom: 15px;
+            max-width: 190px;
+        }
+    }
+
+    .sertificate__herosect {
+        min-height: 410px;
+    }
+
+    .sertificate__herosect h1 {
+        font-size: 42px;
+    }
+
+    .sertgetstarted .secttitle {
+        margin-bottom: 20px;
+    }
+
+    .accordeonrow .accordeon__header p {
+        font-size: 21px;
+    }
+
+    .accordeonrow .accordeon__body .descr {
+        max-width: 100%;
+    }
+
+    .careerinsights {
+        padding: 60px 0;
+    }
+
+    .careerslider .swiper-slide {
+        width: 80%;
+    }
+
+    .careerslider .swiper-slide.small {
+        width: 50%;
+    }
+
+    .tabinfowrapper {
+        margin-top: 40px;
+    }
+
+    .teacherheader .teacherinfo {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 0;
+    }
+
+    .teacherheader .imgwrap {
+        margin-bottom: 10px;
+    }
+
+    .teacherheader .teacherinfo .name {
+        font-size: 18px;
+    }
+
+    .teacherheader .teacherinfo p,
+    .textbox li {
+        font-size: 14px;
+    }
+
+    .teacherheader,
+    .textbox {
+        margin-bottom: 20px;
+    }
+
+    .textbox .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .textbox li {
+        margin-bottom: 5px;
+    }
+
+    .textbox ol,
+    .textbox ul {
+        padding-left: 16px;
+    }
+
+
+
+
+
+    .coursedescription,
+    .coursestruc,
+    .payment-info,
+    .sertgetstarted,
+    .videosection {
+        padding: 60px 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .sertificate__herosect h1 {
+        br {
+            display: none;
+        }
+    }
+
+    .sertificate__herosect h1 {
+        font-size: 36px;
+    }
+
+    .sertificate__herosect {
+        min-height: 550px;
+    }
+
+    .sertificate__herosectbg {
+        object-position: 85% 0;
+    }
+
+    .sertificate__herosect ul {
+        justify-content: space-between;
+        align-items: flex-start;
+
+        li {
+            max-width: 85%;
+            flex: 0 0 85%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            padding-bottom: 8px;
+            padding-left: 0;
+
+            br {
+                display: none;
+            }
+           
+            &::after {
+               display: none;
+            }
+        }
+    }
+
+    .sertificate__herosect:after {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .getstartedicwrap .getstartedicbox img {
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .getstartedicwrap .getstartedicbox .title {
+        font-size: 18px;
+    }
+
+    .getstartedicwrap .getstartedicbox {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .getstartedicwrap .getstartedicbox p {
+        font-size: 12px;
+        line-height: auto;
+    }
+
+    .accordeonrow .accordeon__header .count {
+        max-width: 30px;
+        flex: 0 0 30px;
+    }
+
+    .accordeonrow .accordeon__header p {
+        max-width: calc(100% - 30px);
+        flex: 0 0 calc(100% - 30px);
+    }
+
+    .accordeonrow .accordeon__header p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .accordeonrow .accordeon__header {
+        min-height: 74px;
+    }
+
+    .careerslider .swiper-slide,
+    .careerslider .swiper-slide.small {
+        width: 100%;
+    }
+
+    .careerslider .imgwrap {
+        height: 250px;
+    }
+
+    .payment-info .descrbox .linetext p.title {
+        font-size: 18px;
+    }
+
+    .accordeonrow .accordeon__body {
+        padding-left: 0;
+    }
+
+    .coursedescription__btn .arr {
+        margin-right: 30px;
+    }
+
+    .tab-item {
+        padding-top: 50px;
+    }
+
+    .coursedescription .secttitle {
+        margin-bottom: 30px;
+    }
+
+    .pusic {
+        width: 30px;
+        height: 30px;
+
+        span {
+            width: 14px;
+        }
+    }
+
+    .tabs {
+        border-right: none;
+    }    
 
 }
