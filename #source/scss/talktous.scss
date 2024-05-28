@@ -1,0 +1,293 @@
+.titlesection.titlesection__ttu {
+    h1 {
+        font-weight: 400;
+        line-height: 100%;
+
+        span {
+            max-width: 166px;
+            display: inline-block;
+            font-size: 35px;
+        }
+    }
+
+    .descr {
+        padding-left: 75px;
+    }
+}
+
+.ttucontinfo {
+    background: #304078;
+    padding: 100px 0;
+}
+
+.ttucontinfo__list {
+    max-width: 495px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-bottom: 70px;
+        display: flex;
+        border-bottom: 1px solid rgba(#fff, 0.5);
+        align-items: center;
+
+        &:nth-child(1) {
+            a {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+
+        .icon {
+            width: 100%;
+            max-width: 60px;
+            flex: 0 0 60px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+        }
+
+        a,
+        p {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: calc(100% - 60px);
+            flex: 0 0 calc(100% - 60px);
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 115%;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+            margin: 0;
+            padding: 10px 0 10px 15px;
+            height: 100%;
+            border-left: 1px solid rgba(#fff, 0.5);
+        }
+
+        a:hover {
+            // opacity: 0.7;
+            color: #F05C61;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ttucontinfo__right {
+    padding-right: 50px;
+
+    form {
+        .inputfield {
+            margin-bottom: 50px;
+
+            label {
+                display: block;
+                color: #fff;
+                font-size: 28px;
+                line-height: 115%;
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 34px;
+                color: #fff;
+                font-size: 18px;
+                font-family: "Prompt", sans-serif;
+                border-bottom: 1px solid rgba(#fff, 0.7);
+                transition: 0.3s;
+
+                &:focus {
+                    border-bottom: 1px solid #fff;
+                }
+
+                &::placeholder {
+                    color: rgba(#fff, 0.3);
+                }
+            }
+        }
+
+        .textareafield {
+            margin-top: 80px;
+
+            textarea {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 34px;
+                color: #fff;
+                font-size: 18px;
+                font-family: "Prompt", sans-serif;
+                border-bottom: 1px solid rgba(#fff, 0.7);
+                transition: 0.3s;
+
+                &::placeholder {
+                    color: rgba(#fff, 0.3);
+                }
+
+                &:focus {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        .redbtn {
+            max-width: 268px;
+            font-family: "Inter Tight", sans-serif;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+
+    .ttucontinfo__right form .inputfield label {
+        font-size: 24px;
+    }
+
+    .ttucontinfo__list li:first-child a,
+    .ttucontinfo__list li a,
+    .ttucontinfo__list li p {
+        font-size: 21px;
+    }
+
+    .ttucontinfo__right form .inputfield {
+        margin-bottom: 40px;
+    }
+
+    .ttucontinfo__right form .textareafield {
+        margin-top: 60px;
+    }
+
+    .ttucontinfo__right form .redbtn {
+        margin-top: 10px;
+    }
+
+    .titlesection.titlesection__ttu .descr {
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .ttucontinfo__list {
+        max-width: 380px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .ttucontinfo__left {
+        margin-bottom: 0;
+    }
+
+    .ttucontinfo {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .ttucontinfo__right {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .ttucontinfo__list {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+            max-width: 48%;
+            flex: 0 0 48%;
+
+            &:last-child {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+
+    }
+
+    .ttucontinfo__list li a,
+    .ttucontinfo__list li p {
+        min-height: 60px;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .ttucontinfo {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .ttucontinfo__list li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .titlesection.titlesection__ttu h1 span {
+        font-size: 31px;
+        max-width: 150px;
+    }
+
+    .ttucontinfo__right form .inputfield label {
+        font-size: 20px;
+    }
+
+    .ttucontinfo__right form .inputfield input,
+    .ttucontinfo__right form .textareafield textarea {
+        font-size: 16px;
+    }
+
+    .ttucontinfo__right form .textareafield {
+        margin-top: 0;
+    }
+
+    .ttucontinfo__right form .redbtn {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .ttucontinfo__list li a, .ttucontinfo__list li p, .ttucontinfo__list li:first-child a {
+        font-size: 16px;
+        min-height: 40px;
+    }
+
+    .ttucontinfo__list li .icon {
+        max-width: 50px;
+
+        img {
+            max-width: 30px;
+        }
+    }
+
+    .ttucontinfo__list li {
+        margin-bottom: 40px;
+    }
+
+}

@@ -127,5 +127,49 @@
 }
 
 @media(max-width:767.8px) {
+    .sertificate__herosect.why h1 {
+        margin-bottom: 30px;
+    }
 
+    .sertgetstarted.why .getstartedicbox {
+        padding-bottom: 15px;
+    }
+
+    .learnsupp__lists .listblock {
+        margin-bottom: 40px;
+    }
+
+
+    .learnsupp {
+        padding: 60px 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .sertificate__herosect.why .subtitle {
+        font-size: 16px;
+    }
+
+    .sertificate__herosect.why h1 {
+        font-size: 50px;
+    }
+
+    .learnsupp .secttitle {
+        margin-bottom: 20px;
+    }
+
+    .learnsupp__lists .listblock .title {
+        font-size: 20px;
+    }
+
+
+    .learnsupp .learnsupp__leftsect p {
+        font-size: 16px;
+    }
+
+    .learnsupp__lists .redbtn.mob,
+    .redbtn.mob {
+        max-width: 100%;
+    }
 }
