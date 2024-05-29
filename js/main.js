@@ -189,6 +189,91 @@ $(document).ready(function () {
         });
     }
 
+     // select2
+     if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "Select a state",
+            minimumResultsForSearch: Infinity,
+        });
+    }
+
+
+    // steps
+
+    // $('.nextbtn').click(function(){
+    //     var currentSection = $(this).closest('.stepsection');
+    //     var nextSection = currentSection.next('.stepsection');
+    //     if (nextSection.length) {
+    //         $('.stepsection').addClass('hide'); 
+    //         nextSection.removeClass('hide'); 
+    //     }
+    // });
+
+    // $('.backbtn').click(function(){
+    //     var currentSection = $(this).closest('.stepsection');
+    //     var prevSection = currentSection.prev('.stepsection');
+    //     if (prevSection.length) {
+    //         $('.stepsection').addClass('hide'); // ховаємо всі секції
+    //         prevSection.removeClass('hide'); // показуємо попередню секцію
+    //     }
+    // });
+
+    
+    function updateStepsHeader(index) {
+        const steps = $('.steps__header ul li');
+        steps.each(function(i) {
+            $(this).removeClass('active check');
+            if (i < index) {
+                $(this).addClass('check');
+            } else if (i === index) {
+                $(this).addClass('active');
+            }
+        });
+    }
+
+    $('.nextbtn').click(function(){
+        
+        var currentSection = $(this).closest('.stepsection');
+        var nextSection = currentSection.next('.stepsection');
+        if (nextSection.length) {
+            $('.stepsection').addClass('hide'); // ховаємо всі секції
+            nextSection.removeClass('hide'); // показуємо наступну секцію
+            updateStepsHeader(nextSection.index('.stepsection')); // оновлюємо заголовок кроків
+        }
+    });
+
+    $('.backbtn').click(function(){
+        var currentSection = $(this).closest('.stepsection');
+        var prevSection = currentSection.prev('.stepsection');
+        if (prevSection.length) {
+            $('.stepsection').addClass('hide'); // ховаємо всі секції
+            prevSection.removeClass('hide'); // показуємо попередню секцію
+            updateStepsHeader(prevSection.index('.stepsection')); // оновлюємо заголовок кроків
+        }
+    });
+
+    // Initial call to set the correct step on load
+    updateStepsHeader($('.stepsection:not(.hide)').index('.stepsection'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 })
 
