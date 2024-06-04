@@ -499,12 +499,13 @@
                 max-width: calc(100% - 178px);
                 flex: 0 0 calc(100% - 178px);
                 padding-left: 24px;
-                font-size: 30px;
+                font-size: 24px;
                 font-weight: 500;
                 color: #454545;
                 margin: 0;
                 opacity: 0.2;
                 transition: 0.3s;
+                padding-right: 15px;
             }
         }
 
@@ -694,6 +695,13 @@
     min-height: 100%;
 }
 
+.accordeonrow .accordeon__body {
+    ul {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
 
 // border-right: 1px solid rgba(48, 64, 120, 0.6);
 
