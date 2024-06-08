@@ -577,6 +577,10 @@
 .textbox {
     margin-bottom: 65px;
 
+    h2,
+    h3,
+    h4,
+    h5,
     .title {
         margin-bottom: 20px;
         color: #454545;
@@ -688,7 +692,7 @@
 
 .coursestruc .tab .tabname {
     border-right: none;
-} 
+}
 
 .tabs {
     border-right: 1px solid rgba(48, 64, 120, 0.6);
@@ -1154,9 +1158,16 @@
         margin-bottom: 20px;
     }
 
-    .textbox .title {
-        font-size: 18px;
-        margin-bottom: 10px;
+    .textbox {
+
+        h2,
+        h3,
+        h4,
+        h5,
+        .title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
     }
 
     .textbox li {
@@ -1215,9 +1226,9 @@
             br {
                 display: none;
             }
-           
+
             &::after {
-               display: none;
+                display: none;
             }
         }
     }
@@ -1303,6 +1314,6 @@
 
     .tabs {
         border-right: none;
-    }    
+    }
 
 }

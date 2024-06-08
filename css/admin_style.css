@@ -1,0 +1,28 @@
+.calendarsect__frame {
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+    right: -50px;
+    top: 0;
+}
+.calendarsect .col-xxl-8{
+    height: 730px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 1399.8px) {
+    .calendarsect__frame {
+        width: auto;
+        height: auto;
+        position: initial;
+        right: initial;
+        top: initial;
+    }
+    .calendarsect .col-xxl-8{
+        height: auto;
+    }
+    .calendarsect.bgpink{
+        padding-bottom: 0;
+    }
+}
