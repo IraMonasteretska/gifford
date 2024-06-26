@@ -455,79 +455,53 @@
         }
     }
 
-    .tab-item {
-        display: none;
 
-        &.active-tab {
-            display: block;
+    .tabname {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 125px;
+        border-bottom: 1px solid rgba(#304078, 0.8);
+        border-right: 1px solid rgba(#304078, 0.8);
+        padding: 15px 0;
+        cursor: pointer;
+
+        &:nth-child(2n) {
+            padding-left: 35px;
         }
-    }
 
-    .tab {
-
-        .tabname {
-            display: flex;
+        span {
+            width: 100%;
+            max-width: 178px;
+            flex: 0 0 178px;
+            display: inline-flex;
             align-items: center;
-            flex-wrap: wrap;
-            min-height: 120px;
-            border-bottom: 1px solid rgba(#304078, 0.6);
-            border-right: 1px solid rgba(#304078, 0.6);
-            padding: 15px 0;
-            cursor: pointer;
-
-            span {
-                width: 100%;
-                max-width: 178px;
-                flex: 0 0 178px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-size: 16px;
-                line-height: 24px;
-                color: #304078;
-                min-height: 42px;
-                padding: 4px;
-                border-radius: 80px;
-                border: 1px solid #304078;
-                opacity: 0.2;
-                transition: 0.3s;
-            }
-
-            p {
-                width: 100%;
-                max-width: calc(100% - 178px);
-                flex: 0 0 calc(100% - 178px);
-                padding-left: 24px;
-                font-size: 24px;
-                font-weight: 500;
-                color: #454545;
-                margin: 0;
-                opacity: 0.2;
-                transition: 0.3s;
-                padding-right: 15px;
-            }
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            color: #304078;
+            min-height: 42px;
+            padding: 4px;
+            border-radius: 80px;
+            border: 1px solid #304078;
+            transition: 0.3s;
         }
 
-        &.active {
-
-            span {
-                opacity: 1;
-            }
-
-            p {
-                color: #304078;
-                opacity: 1;
-            }
+        p {
+            width: 100%;
+            max-width: calc(100% - 178px);
+            flex: 0 0 calc(100% - 178px);
+            padding-left: 33px;
+            font-size: 30px;
+            font-weight: 500;
+            color: #454545;
+            margin: 0;
+            transition: 0.3s;
+            padding-right: 15px;
         }
-
     }
-
-    .tab_content {
-        position: sticky;
-        top: 110px;
-    }
-
 }
 
 .tabinfowrapper {
@@ -619,7 +593,7 @@
 }
 
 .coreunits {
-    margin-bottom: 95px;
+    margin-bottom: 150px;
 
     &:last-child {
         margin-bottom: 0;
@@ -695,8 +669,9 @@
 }
 
 .tabs {
-    border-right: 1px solid rgba(48, 64, 120, 0.6);
     min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .accordeonrow .accordeon__body {
@@ -710,6 +685,10 @@
 // border-right: 1px solid rgba(48, 64, 120, 0.6);
 
 @media(max-width:1599.8px) {
+
+    .coursestruc .tabname p {
+        font-size: 24px;
+    }
 
     .getstartedicwrap .getstartedicbox img {
         height: 80px;
@@ -762,6 +741,10 @@
         flex: 0 0 160px;
     }
 
+    .coreunits {
+        margin-bottom: 120px;
+    }
+
     .coursestruc .tab .tabname p {
         max-width: calc(100% - 160px);
         flex: 0 0 calc(100% - 160px);
@@ -770,16 +753,6 @@
     .coursestruc .tab .tabname span {
         font-size: 14px;
     }
-
-
-
-
-
-
-
-
-
-
 
 
     .sertgetstarted,
@@ -868,6 +841,10 @@
 
     .coursestruc__top {
         margin-bottom: 50px;
+    }
+
+    .coreunits {
+        margin-bottom: 90px;
     }
 
     .coursestruc .coreunits__title .title {
@@ -974,6 +951,14 @@
 }
 
 @media(max-width:991.8px) {
+    .coursestruc .tabname {
+        width: 100%;
+        border-right: none;
+    }
+
+    .coursestruc .tabname:nth-child(2n) {
+        padding-left: 0;
+    }
 
     .sertificate__herosect h1 {
         margin-bottom: 40px;
@@ -1303,6 +1288,13 @@
         margin-bottom: 30px;
     }
 
+    .coursestruc .tabname p {
+        font-size: 20px;
+    }
+    .coursestruc .tabname {
+        min-height: 110px;
+    }
+
     .pusic {
         width: 30px;
         height: 30px;
@@ -1315,5 +1307,24 @@
     .tabs {
         border-right: none;
     }
+}
 
+@media(max-width:424.8px) {
+    .coursestruc .tabname{
+        flex-wrap: wrap;
+    }
+    .coursestruc .tabname p {
+        max-width: 100%;
+        flex: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        order: -1;
+        margin-bottom: 10px;
+    }
+    .coreunits {
+        margin-bottom: 60px;
+    }
+    .coursestruc .coreunits__title {
+        margin-bottom: 20px;
+    }
 }

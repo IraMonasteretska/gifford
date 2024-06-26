@@ -151,6 +151,63 @@
     }
 }
 
+.ttucontinfo__right form .inputfield input[type=radio] {
+    width: 30px;
+    cursor: pointer
+}
+
+.ttucontinfo__right form .inputfield.date {
+    position: relative
+}
+
+.ttucontinfo__right form .inputfield.date .icon-date {
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    background: url(../img/talk/calendar-white.svg) no-repeat center;
+    right: 2px;
+    bottom: 2px;
+    z-index: 2
+}
+
+.ttucontinfo__right form .inputfield.date input {
+    background: transparent
+}
+
+.ttucontinfo__right form .inputfield.date input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    right: 2px;
+    bottom: 2px
+}
+
+.select2-results__option--selectable { 
+    color: rgba(48, 64, 120, 0.8)
+}
+
+.ttucontinfo__right form .select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    height: 34px
+}
+
+
+.ttucontinfo__right form .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.ttucontinfo__right form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff
+}
+
+.ttucontinfo__right form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 24px;
+    height: 24px;
+    background: url(../img/enroll/select-arrow-white.svg) no-repeat center/24px
+}
+
 @media(max-width:1599.8px) {
 
     .ttucontinfo__right form .inputfield label {

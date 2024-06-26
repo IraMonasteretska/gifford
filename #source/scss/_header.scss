@@ -248,7 +248,7 @@
         text-indent: -9999px;
         width: 36px;
         height: 20px;
-        background: rgba(#3A3A3A, 0.5);
+        background: #F2B737;
         display: block;
         border-radius: 100px;
         position: relative;
@@ -268,7 +268,7 @@
     }
 
     input:checked+label {
-        background: #FF754A;
+        background: #658A61;
     }
 
     input:checked+label:after {
@@ -323,7 +323,10 @@ header.header.white {
     }
 
     .switchel label {
-        background: #304078;
+        background: #F2B737;
+    }
+    .switchel input:checked+label {
+        background: #658A61;
     }
 
     .header__rightsect .header__btns {
