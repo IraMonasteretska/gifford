@@ -135,7 +135,22 @@
     .checkfield {
         margin: 32px 0;
 
+        textarea,
         input {
+            border: none;
+            display: inline-block;
+            vertical-align: middle;
+            outline: none;
+            border-bottom: 1px solid rgba(48, 64, 120, 0.7);
+            width: calc(100% - 45px);
+            height: 30px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        input[type=checkbox] {
             display: none;
 
             &:checked+label {
@@ -146,7 +161,8 @@
         }
 
         label {
-            display: block;
+            display: inline-block;
+            vertical-align: middle;
             position: relative;
             padding-left: 37px;
             font-size: 14px;
@@ -282,6 +298,173 @@ input[type=number] {
     background-position: center;
     background-size: 22px;
 }
+
+// radio buttons -----
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=radio]+span {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        border: 2px solid #304078;
+        margin-right: 17px;
+        transition: .2s;
+    }
+}
+
+input[type=radio]:checked+span:before {
+    border-color: #FF754A;
+}
+
+input[type=radio]+span:after {
+    content: '';
+    position: absolute;
+    transition: .2s;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FF754A;
+    left: 5px;
+    top: 5px;
+    opacity: 0;
+}
+
+input[type=radio]:checked+span:after {
+    opacity: 1;
+}
+
+.inputfield+.radio-row {
+    margin-top: 50px;
+}
+
+.inputfield.radio-row {
+
+    .radiobuttons {
+        margin-top: 30px;
+
+        span {
+            width: calc(100% - 45px);
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+    .radiobuttons label {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        position: relative;
+        justify-content: flex-end;
+        margin-bottom: 18px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hiddenblock {
+    padding-top: 50px;
+
+    .inputfield {
+        margin-bottom: 40px;
+    }
+
+    .inputfield.radio-row {
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+}
+
+.additional-infotext {
+    color: #304078;
+    margin-bottom: 50px;
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    a{
+        color: #304078;
+        transition: .3s;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+        line-height: 130%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.additional-checkfields {
+    margin-bottom: 70px;
+    .title {
+        color: #304078;
+        font-size: 22px;
+        line-height: 130%;
+        margin-bottom: 32px;
+    }
+    a{
+        color: #304078;
+        transition: .3s;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    .checkfield{
+        margin: 0 0 24px;
+        display: flex;
+        align-items: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.step-info{
+    color: #304078;
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: 400;
+    b{
+        margin: 40px 0;
+        display: block;
+    }
+    li::marker{
+        font-size: 11px;
+    }
+}
+.input-infotext{
+    font-weight: 300;
+    font-size: 14px;
+    color: #304078;
+}
+
+.stepdescr{
+    font-size: 18px;
+    color: #304078;
+    line-height: 150%;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
 
 @media(max-width:1599.8px) {
 
@@ -425,6 +608,7 @@ input[type=number] {
         font-size: 18px;
         padding: 2px 5px;
     }
+
     .btnsgroup .nextbtn,
     .btnsgroup input {
         max-width: calc(55% - 5px);
@@ -434,7 +618,7 @@ input[type=number] {
         padding: 2px 5px;
     }
 
-   
+
 
     .stepblock .inputfield label {
         margin-bottom: 10px;
