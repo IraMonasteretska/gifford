@@ -64,12 +64,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".graduates-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
-        // loop: true,
         speed: 800,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
 
         navigation: {
             nextEl: ".swiper-button-next",
@@ -120,10 +115,6 @@ $(document).ready(function () {
         slidesPerView: "auto",
         spaceBetween: 20,
         speed: 800,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
         loop: true,
         pagination: {
             el: ".swiper-pagination",
@@ -133,66 +124,66 @@ $(document).ready(function () {
 
 
     // tabs
-    $('.wrapper1 .tab').on('click', function (event) {
-        var id = $(this).attr('data-id');
-        $('.wrapper1').find('.tab-item').removeClass('active-tab').hide();
-        $('.wrapper1 .tabs').find('.tab').removeClass('active');
-        $(this).addClass('active');
-        $('#' + id).addClass('active-tab').fadeIn();
-        return false;
-    });
+    // $('.wrapper1 .tab').on('click', function (event) {
+    //     var id = $(this).attr('data-id');
+    //     $('.wrapper1').find('.tab-item').removeClass('active-tab').hide();
+    //     $('.wrapper1 .tabs').find('.tab').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('#' + id).addClass('active-tab').fadeIn();
+    //     return false;
+    // });
 
-    $('.wrapper2 .tab').on('click', function (event) {
-        var id = $(this).attr('data-id');
-        $('.wrapper2').find('.tab-item').removeClass('active-tab').hide();
-        $('.wrapper2 .tabs').find('.tab').removeClass('active');
-        $(this).addClass('active');
-        $('#' + id).addClass('active-tab').fadeIn();
-        return false;
-    });
+    // $('.wrapper2 .tab').on('click', function (event) {
+    //     var id = $(this).attr('data-id');
+    //     $('.wrapper2').find('.tab-item').removeClass('active-tab').hide();
+    //     $('.wrapper2 .tabs').find('.tab').removeClass('active');
+    //     $(this).addClass('active');
+    //     $('#' + id).addClass('active-tab').fadeIn();
+    //     return false;
+    // });
 
     // test
-    if ($(window).width() < 576) {
-        const tabs = document.querySelectorAll('.wrapper1 .tab');
-        const tabItems = document.querySelectorAll('.wrapper1 .tab-item');
+    // if ($(window).width() < 576) {
+    //     const tabs = document.querySelectorAll('.wrapper1 .tab');
+    //     const tabItems = document.querySelectorAll('.wrapper1 .tab-item');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function () {
-                const id = this.dataset.id;
+    //     tabs.forEach(tab => {
+    //         tab.addEventListener('click', function () {
+    //             const id = this.dataset.id;
 
-                tabs.forEach(t => t.classList.remove('active'));
-                tabItems.forEach(item => item.classList.remove('active-tab'));
+    //             tabs.forEach(t => t.classList.remove('active'));
+    //             tabItems.forEach(item => item.classList.remove('active-tab'));
 
-                this.classList.add('active');
-                document.getElementById(id).classList.add('active-tab');
+    //             this.classList.add('active');
+    //             document.getElementById(id).classList.add('active-tab');
 
-                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+    //             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    //         });
+    //     });
 
 
-        const tabs2 = document.querySelectorAll('.wrapper2 .tab');
-        const tabItems2 = document.querySelectorAll('.wrapper2 .tab-item');
+    //     const tabs2 = document.querySelectorAll('.wrapper2 .tab');
+    //     const tabItems2 = document.querySelectorAll('.wrapper2 .tab-item');
 
-        tabs2.forEach(tab => {
-            tab.addEventListener('click', function () {
-                const id = this.dataset.id;
+    //     tabs2.forEach(tab => {
+    //         tab.addEventListener('click', function () {
+    //             const id = this.dataset.id;
 
-                tabs2.forEach(t => t.classList.remove('active'));
-                tabItems2.forEach(item => item.classList.remove('active-tab'));
+    //             tabs2.forEach(t => t.classList.remove('active'));
+    //             tabItems2.forEach(item => item.classList.remove('active-tab'));
 
-                this.classList.add('active');
-                document.getElementById(id).classList.add('active-tab');
+    //             this.classList.add('active');
+    //             document.getElementById(id).classList.add('active-tab');
 
-                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    }
+    //             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    //         });
+    //     });
+    // }
 
-     // select2
-     if ($('select').length) {
+    // select2
+    if ($('select').length) {
         $('.styledselect').select2({
-            placeholder: "Select a state",
+            placeholder: "Please select",
             minimumResultsForSearch: Infinity,
         });
     }
@@ -218,10 +209,10 @@ $(document).ready(function () {
     //     }
     // });
 
-    
+
     function updateStepsHeader(index) {
         const steps = $('.steps__header ul li');
-        steps.each(function(i) {
+        steps.each(function (i) {
             $(this).removeClass('active check');
             if (i < index) {
                 $(this).addClass('check');
@@ -231,24 +222,24 @@ $(document).ready(function () {
         });
     }
 
-    $('.nextbtn').click(function(){
-        
+    $('.nextbtn').click(function () {
+
         var currentSection = $(this).closest('.stepsection');
         var nextSection = currentSection.next('.stepsection');
         if (nextSection.length) {
-            $('.stepsection').addClass('hide'); // ховаємо всі секції
-            nextSection.removeClass('hide'); // показуємо наступну секцію
-            updateStepsHeader(nextSection.index('.stepsection')); // оновлюємо заголовок кроків
+            $('.stepsection').addClass('hide'); 
+            nextSection.removeClass('hide'); 
+            updateStepsHeader(nextSection.index('.stepsection')); 
         }
     });
 
-    $('.backbtn').click(function(){
+    $('.backbtn').click(function () {
         var currentSection = $(this).closest('.stepsection');
         var prevSection = currentSection.prev('.stepsection');
         if (prevSection.length) {
-            $('.stepsection').addClass('hide'); // ховаємо всі секції
-            prevSection.removeClass('hide'); // показуємо попередню секцію
-            updateStepsHeader(prevSection.index('.stepsection')); // оновлюємо заголовок кроків
+            $('.stepsection').addClass('hide'); 
+            prevSection.removeClass('hide'); 
+            updateStepsHeader(prevSection.index('.stepsection')); 
         }
     });
 
@@ -260,6 +251,68 @@ $(document).ready(function () {
 
 
 
+    // form scripts
+    function updateHiddenBlock() {
+        $('.stepblock').each(function () {
+            var radioYes = $(this).find('.radiochoice .yes').is(':checked');
+            var hiddenBlock = $(this).find('.hiddenblock');
+            var choiseYes = $(this).find('.choise-yes');
+            var choiseNo = $(this).find('.choise-no');
+            if (radioYes) {
+                hiddenBlock.addClass('active');
+                choiseYes.show();
+                choiseNo.hide();
+            } else {
+                hiddenBlock.removeClass('active');
+                choiseYes.hide();
+                choiseNo.show();
+            }
+        });
+    }
+
+    // Initial check on page load
+    updateHiddenBlock();
+
+    // Check when any radio button changes
+    $('.radiochoice input[type="radio"]').change(function () {
+        updateHiddenBlock();
+    });
+
+
+    //  form upload file scripts
+
+    $('.upload-row').each(function() {
+        var $uploadRow = $(this);
+        var $inputFile = $uploadRow.find('input[type="file"]');
+        var $fileInfo = $uploadRow.find('.fileinfo');
+        var $removeBtn = $uploadRow.find('.removebtn');
+
+        $inputFile.change(function() {
+            var fileName = this.files.length > 0 ? this.files[0].name : "No File Chosen";
+            $fileInfo.text(fileName);
+        });
+
+        $removeBtn.click(function() {
+            $inputFile.val('');
+            $fileInfo.text("No File Chosen");
+        });
+    });
+
+    // form checkbox textarea 
+    $('.checkfield.with-textarea').each(function() {
+        var $checkField = $(this);
+        var $checkBox = $checkField.find('input[type="checkbox"]');
+        var $textArea = $checkField.find('textarea');
+
+        $checkBox.change(function() {
+            if ($(this).is(':checked')) {
+                $textArea.prop('disabled', false);
+                $textArea.addClass('active');
+            } else {
+                $textArea.removeClass('active').val('');
+            }
+        });
+    });
 
 
 
@@ -272,7 +325,6 @@ $(document).ready(function () {
 
 
 
-    
 
 
 })

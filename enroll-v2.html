@@ -173,7 +173,7 @@
                 <div class="container">
                     <form action="#">
                         <!-- 1 -->
-                        <div class="stepsection step1">
+                        <div class="stepsection step1 ">
                             <div class="stepblock">
                                 <p class="steptitle">
                                     Education Agent/ Representative
@@ -188,19 +188,19 @@
                                 </div>
                                 <div class="inputfield radio-row">
                                     <label for="radio1">Are you applying through an education agent?*</label>
-                                    <div class="radiobuttons" id="radio1">
+                                    <div class="radiobuttons radiochoice" id="radio1">
                                         <label>
-                                            <input type="radio" name="ch1">
+                                            <input type="radio" name="ch1" class="yes" checked>
                                             <span>Yes</span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="ch1">
+                                            <input type="radio" name="ch1" class="no">
                                             <span>No</span>
                                         </label>
                                     </div>
                                 </div>
 
-                                <div class="hiddenblock">
+                                <div class="hiddenblock" style="padding-top: 50px;">
                                     <div class="inputfield">
                                         <label for="aname">Agency Name*</label>
                                         <select name="" id="aname" class="styledselect">
@@ -285,26 +285,28 @@
                                     <div class="inputfield radio-row">
                                         <label for="radio3">Have you previously been known by any other name? (For
                                             example: This could be your Maiden name)</label>
-                                        <div class="radiobuttons" id="radio3">
+                                        <div class="radiobuttons radiochoice" id="radio3">
                                             <label>
-                                                <input type="radio" name="ch3">
+                                                <input type="radio" name="ch3" class="yes" checked>
                                                 <span>Yes</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="ch3">
+                                                <input type="radio" name="ch3" class="no">
                                                 <span>No</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="inputfield">
-                                        <label for="aname">Name known as previously*</label>
-                                        <select name="" id="" class="styledselect">
-                                            <option></option>
-                                            <option value="1">option1</option>
-                                            <option value="2">option2</option>
-                                        </select>
+                                    <div class="hiddenblock">
+                                        <div class="inputfield">
+                                            <label for="aname">Name known as previously*</label>
+                                            <select name="" id="" class="styledselect">
+                                                <option></option>
+                                                <option value="1">option1</option>
+                                                <option value="2">option2</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -396,37 +398,37 @@
                                 <div class="col-12">
                                     <div class="inputfield radio-row">
                                         <label for="radio3">Do You Currently Reside In Australia?*</label>
-                                        <div class="radiobuttons" id="">
+                                        <div class="radiobuttons radiochoice" id="">
                                             <label>
-                                                <input type="radio" name="ch4">
+                                                <input type="radio" name="ch4" class="yes" checked>
                                                 <span>Yes</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="ch4">
+                                                <input type="radio" class="no" name="ch4">
                                                 <span>No</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 choise-yes">
                                     <div class="inputfield">
                                         <label for="pobox">Street number*</label>
                                         <input type="text" placeholder="Enter number" id="pobox">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 choise-yes">
                                     <div class="inputfield">
                                         <label for="flatnum">Street Address*</label>
                                         <input type="text" placeholder="Enter street name" id="">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 choise-yes">
                                     <div class="inputfield">
                                         <label for="strnum">Suburb*</label>
                                         <input type="number" placeholder="Enter" id="strnum">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 choise-yes">
                                     <div class="inputfield">
                                         <label for="date">State*</label>
                                         <select name="" id="" class="styledselect" data-placeholder="Please select">
@@ -436,14 +438,54 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 choise-yes">
                                     <div class="inputfield">
                                         <label for="suburb">Postcode*</label>
                                         <input type="text" placeholder="Enter number" id="suburb">
                                     </div>
                                 </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="str">Street number*</label>
+                                        <input type="text" placeholder="Enter number" id="str">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="flatnum">Suburb/Township/City*</label>
+                                        <input type="text" placeholder="Enter" id="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="strnum">Street Address - International*</label>
+                                        <input type="number" placeholder="Enter street name" id="strnum">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="suburb">State/Province*</label>
+                                        <input type="text" placeholder="Enter number" id="suburb">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="date">Country*</label>
+                                        <select name="" id="" class="styledselect" data-placeholder="Please select">
+                                            <option></option>
+                                            <option value="2">State 1</option>
+                                            <option value="3">State 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 choise-no">
+                                    <div class="inputfield">
+                                        <label for="suburb">Zip Postal*</label>
+                                        <input type="text" placeholder="Enter number" id="suburb">
+                                    </div>
+                                </div>
                                 <div class="col-12">
-                                    <div class="checkfield">
+                                    <div class="checkfield" style="margin: 0 0 50px;">
                                         <input type="checkbox" id="check12">
                                         <label for="check12">
                                             My postal address is different to the above address
@@ -484,9 +526,6 @@
                                         <input type="number" placeholder="Enter number" id="strnum">
                                     </div>
                                 </div>
-
-
-
                             </div>
                             <p class="steptitle">
                                 Disability
@@ -497,18 +536,19 @@
                                         <label for="">Do You Have Any Physical Or Mental Impairments Or Other Medical
                                             Conditions That May Effect Your Studies, Or In General We Should Be Aware
                                             Of?*</label>
-                                        <div class="radiobuttons" id="">
+                                        <div class="radiobuttons radiochoice" id="">
                                             <label>
-                                                <input type="radio" name="ch5">
+                                                <input type="radio" name="ch5" class="yes" checked>
                                                 <span>Yes</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="ch5">
+                                                <input type="radio" name="ch5" class="no">
                                                 <span>No</span>
                                             </label>
                                         </div>
                                     </div>
-
+                                </div>
+                                <div class="hiddenblock">
                                     <div class="additional-infotext">
                                         <p class="title">
                                             Disability supplement
@@ -611,65 +651,65 @@
                                             reported under this category.
                                         </p>
                                     </div>
-
-                                </div>
-                                <div class="additional-checkfields">
-                                    <p class="title">
-                                        Do you have any physical or mental impairments or other medical conditions that
-                                        may effect your studies, or in general we should be aware of?*
-                                    </p>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check221">
-                                        <label for="check221">
-                                            Hearing/deaf
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check222">
-                                        <label for="check222">
-                                            Physical
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check223">
-                                        <label for="check223">
-                                            Intellectual
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check224">
-                                        <label for="check224">
-                                            Learning
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check225">
-                                        <label for="check225">
-                                            Mental illness
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check226">
-                                        <label for="check226">
-                                            Acquired brain impairment
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check227">
-                                        <label for="check227">
-                                            Vision
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check228">
-                                        <label for="check228">
-                                            Medical condition
-                                        </label>
-                                    </div>
-                                    <div class="checkfield">
-                                        <input type="checkbox" id="check229">
-                                        <label for="check229"></label>
-                                        <textarea placeholder="Other"></textarea>
+                                    <div class="additional-checkfields">
+                                        <p class="title">
+                                            Do you have any physical or mental impairments or other medical conditions
+                                            that
+                                            may effect your studies, or in general we should be aware of?*
+                                        </p>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check221">
+                                            <label for="check221">
+                                                Hearing/deaf
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check222">
+                                            <label for="check222">
+                                                Physical
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check223">
+                                            <label for="check223">
+                                                Intellectual
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check224">
+                                            <label for="check224">
+                                                Learning
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check225">
+                                            <label for="check225">
+                                                Mental illness
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check226">
+                                            <label for="check226">
+                                                Acquired brain impairment
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check227">
+                                            <label for="check227">
+                                                Vision
+                                            </label>
+                                        </div>
+                                        <div class="checkfield">
+                                            <input type="checkbox" id="check228">
+                                            <label for="check228">
+                                                Medical condition
+                                            </label>
+                                        </div>
+                                        <div class="checkfield with-textarea">
+                                            <input type="checkbox" id="check229">
+                                            <label for="check229"></label>
+                                            <textarea placeholder="Other"></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -684,7 +724,7 @@
                         </div>
                         <!-- 3 -->
                         <div class="stepsection step3 hide">
-                            <p class="steptitle">
+                            <p class="steptitle" style="margin-bottom: 40px;">
                                 Australian Unique Student Identifier (USI)
                             </p>
                             <div class="step-info">
@@ -726,27 +766,31 @@
                                 <div class="col-lg-12">
                                     <div class="inputfield radio-row">
                                         <label for="radio31">Do you have an Australian USI?*</label>
-                                        <div class="radiobuttons" id="radio31">
+                                        <div class="radiobuttons radiochoice" id="radio31">
                                             <label>
-                                                <input type="radio" name="ch31">
+                                                <input type="radio" name="ch31" class="yes" checked>
                                                 <span>Yes</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="ch31">
+                                                <input type="radio" name="ch31" class="no">
                                                 <span>No, I give Gifford Academy the authority to create a USI on my
                                                     behalf or to locate my existing USI
                                                 </span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="inputfield">
-                                        <label for="usi">Please provide your Unique Student Identifier Number </label>
-                                        <input type="text" placeholder="USI" id="usi">
+                                    <div class="hiddenblock">
+                                        <div class="inputfield" style="margin-bottom: 24px;">
+                                            <label for="usi">Please provide your Unique Student Identifier Number
+                                            </label>
+                                            <input type="text" placeholder="USI" id="usi">
+                                        </div>
+                                        <p class="input-infotext" style="margin-bottom: 60px;">
+                                            By providing my USI I give Gifford Academy the authority to verify and
+                                            locate my
+                                            existing USI (this includes if I complete this field incorrectly)
+                                        </p>
                                     </div>
-                                    <p class="input-infotext">
-                                        By providing my USI I give Gifford Academy the authority to verify and locate my
-                                        existing USI (this includes if I complete this field incorrectly)
-                                    </p>
                                 </div>
                             </div>
 
@@ -863,7 +907,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="steptitle">
+                            <p class="steptitle" style="margin-bottom: 16px;">
                                 Study Reason
                             </p>
                             <p class="stepdescr">
@@ -911,7 +955,7 @@
                         </div>
                         <!-- 6 -->
                         <div class="stepsection step6 hide">
-                            <p class="steptitle mb40">
+                            <p class="steptitle" style="margin-bottom: 16px;">
                                 Overseas Student Health Cover
                             </p>
                             <p class="stepdescr">
@@ -922,20 +966,20 @@
                                     <div class="inputfield radio-row">
                                         <label for="radio61">Will you require Gifford Academy to organise your
                                             OSHC?*</label>
-                                        <div class="radiobuttons" id="">
+                                        <div class="radiobuttons radiochoice" id="">
                                             <label>
-                                                <input type="radio" name="ch61">
+                                                <input type="radio" name="ch61" class="yes" checked>
                                                 <span>Yes</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="ch61">
+                                                <input type="radio" name="ch61" class="no">
                                                 <span>No, I am organising this myself</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="inputfield radio-row">
+                                    <div class="inputfield radio-row choise-yes">
                                         <label for="radio62">What type of OSHC will you be requiring?*</label>
                                         <div class="radiobuttons" id="">
                                             <label>
@@ -952,6 +996,10 @@
                                             </label>
                                         </div>
                                     </div>
+                                    <div class="inputfield choise-no">
+                                        <label for="course">Please provide details*</label>
+                                        <textarea placeholder="Enter details here"></textarea>
+                                    </div>
                                 </div>
                             </div>
                             <div class="additional-infotext">
@@ -961,6 +1009,86 @@
                                     cover is for the student and dependants (incl. spouse, partner and dependent
                                     children)
                                 </p>
+                            </div>
+                            <div class="upload-inputfield">
+                                <p class="title">
+                                    Please upload a valid copy of your passport* 
+                                </p>
+                                <p class="descr">
+                                    (Validated or certified copies are required)
+                                </p>
+                                <div class="upload-row">
+                                    <label>
+                                        <input type="file">
+                                        <p>Choose file</p>
+                                    </label>
+                                    <button type="button" class="removebtn">
+                                        Remove file
+                                    </button>
+                                    <p class="fileinfo">
+                                        No File Chosen
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="upload-inputfield">
+                                <p class="title">
+                                    Please upload a valid Visa (if applicable)
+                                </p>
+                                <p class="descr">
+                                    (Validated or certified copies are required)
+                                </p>
+                                <div class="upload-row">
+                                    <label>
+                                        <input type="file">
+                                        <p>Choose file</p>
+                                    </label>
+                                    <button type="button" class="removebtn">
+                                        Remove file
+                                    </button>
+                                    <p class="fileinfo">
+                                        No File Chosen
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="upload-inputfield">
+                                <p class="title">
+                                    Other supporting documentation
+                                </p>
+                                <p class="descr">
+                                    (Optional)
+                                </p>
+                                <div class="upload-row">
+                                    <label>
+                                        <input type="file">
+                                        <p>Choose file</p>
+                                    </label>
+                                    <button type="button" class="removebtn">
+                                        Remove file
+                                    </button>
+                                    <p class="fileinfo">
+                                        No File Chosen
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="upload-inputfield">
+                                <p class="title">
+                                    Other supporting documentation
+                                </p>
+                                <p class="descr">
+                                    (Optional)
+                                </p>
+                                <div class="upload-row">
+                                    <label>
+                                        <input type="file">
+                                        <p>Choose file</p>
+                                    </label>
+                                    <button type="button" class="removebtn">
+                                        Remove file
+                                    </button>
+                                    <p class="fileinfo">
+                                        No File Chosen
+                                    </p>
+                                </div>
                             </div>
 
                             <div class="btnsgroup">
@@ -1018,7 +1146,8 @@
                                     <div class="checkfield">
                                         <input type="checkbox" id="check711">
                                         <label for="check711">
-                                            I confirm I have access to sufficient funds for the duration of my studies and
+                                            I confirm I have access to sufficient funds for the duration of my studies
+                                            and
                                             may be required to demonstrate funds to cover expenses for the first year in
                                             Australia.
                                             Refer to homeaffairs.gov.au for more information.
@@ -1087,7 +1216,8 @@
                                         <input type="checkbox" id="check76">
                                         <label for="check76">
                                             I have read and understand the description of the ESOS framework Student
-                                            Fact Sheet available at:<br> <a target="_blank" href="https://internationaleducation.gov.au/Regulatory-Information/Documents/esosstudentfactsheetv4%20-%20Final%20clean%20copy.pdf">https://internationaleducation.gov.au/Regulatory-Information/Documents/esosstudentfactsheetv4%20-%20Final%20clean%20copy.pdf</a>
+                                            Fact Sheet available at:<br> <a target="_blank"
+                                                href="https://internationaleducation.gov.au/Regulatory-Information/Documents/esosstudentfactsheetv4%20-%20Final%20clean%20copy.pdf">https://internationaleducation.gov.au/Regulatory-Information/Documents/esosstudentfactsheetv4%20-%20Final%20clean%20copy.pdf</a>
                                         </label>
                                     </div>
                                     <div class="checkfield">
@@ -1107,8 +1237,8 @@
                                         </label>
                                     </div>
                                     <div class="checkfield">
-                                        <input type="checkbox" id="check78">
-                                        <label for="check78">
+                                        <input type="checkbox" id="check79">
+                                        <label for="check79">
                                             I have read and understand the entry requirements for the course that I have
                                             enrolled in, as well as the Terms and Conditions of Enrolment and the
                                             policies and procedures relating to my enrolment as outlined on the website
