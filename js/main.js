@@ -314,6 +314,16 @@ $(document).ready(function () {
         });
     });
 
+    // checkbox with hidden fields
+
+    $('.check-hidden-field').click(function(){
+        if ($(this).is(':checked')) {
+            $('.hidden-field').show();
+        } else {
+            $('.hidden-field').hide();
+        }
+    });
+
 
 
 
