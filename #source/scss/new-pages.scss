@@ -275,14 +275,14 @@
     }
 }
 
-// .studysect__image {
-//     width: 100%;
+.studysect__image {
+    width: 100%;
 
-//     img {
-//         width: 100%;
-//         background-size: cover;
-//     }
-// }
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
 
 .studysect__content {
     color: #304078;
@@ -295,14 +295,14 @@
 
 //  ADAPTIVE --- //
 @media (max-width:1199.8px) {
-    // .studysect {
-    //     padding: 100px 0 0;
-    // }
+    .studysect {
+        padding: 100px 0 0;
+    }
 
     
-    // .studysect__content {
-    //     padding-top: 40px;
-    // }
+    .studysect__content {
+        padding-top: 40px;
+    }
     
     .qsect.university .secttitle {
         font-size: 26px;
@@ -350,10 +350,10 @@
 }
 
 @media (max-width:991.8px) {
-    // .studysect__rows {
-    //     border: none;
-    //     margin-bottom: 20px;
-    // }
+    .studysect__rows {
+        border: none;
+        margin-bottom: 20px;
+    }
 
     .qsect.university .secttitle {
         font-size: 22px;
@@ -393,23 +393,23 @@
 }
 
 @media (max-width:767.8px) {
-    // .studysect {
-    //     padding: 80px 0 0;
-    // }
+    .studysect {
+        padding: 80px 0 0;
+    }
 
-    // .studysect__descr {
-    //     font-size: 18px;
-    //     margin-bottom: 25px;
-    // }
+    .studysect__descr {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
 
-    // .studysect  .secttitle {
-    //     margin-bottom: 40px;
-    // }
+    .studysect  .secttitle {
+        margin-bottom: 40px;
+    }
 
-    // .studysect__rows li {
-    //     font-size: 18px;
-    //     padding-left: 30px;
-    // }
+    .studysect__rows li {
+        font-size: 18px;
+        padding-left: 30px;
+    }
 
     .pathways {
         padding-bottom: 50px;
@@ -465,16 +465,16 @@
 }
 
 @media (max-width:575.8px) {
-    // .studysect {
-    //     padding: 50px 0 0;
-    // }
-    // .studysect__rows li {
-    //     font-size: 16px;
-    //     padding: 20px 0 20px 25px;
-    // }
-    // .studysect .row+.row {
-    //     margin-top: 15px;
-    // }
+    .studysect {
+        padding: 50px 0 0;
+    }
+    .studysect__rows li {
+        font-size: 16px;
+        padding: 20px 0 20px 25px;
+    }
+    .studysect .row+.row {
+        margin-top: 15px;
+    }
 
     .pathways__item {
         width: 100%;
