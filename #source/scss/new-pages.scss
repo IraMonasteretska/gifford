@@ -4,6 +4,12 @@
     padding: 130px 0;
     color: #6A6A6A;
 
+    .secttitle {
+        color: #304078;
+        text-transform: initial;
+        margin-bottom: 80px;
+    }
+
     a {
         color: #304078;
         transition: .3s;
@@ -22,6 +28,53 @@
     ul,
     ol {
         margin: 15px 0;
+    }
+}
+
+// studentstable section ---
+
+.studentstable {
+    padding: 100px 0;
+    background: #304078;
+
+    .secttitle {
+        margin-bottom: 80px;
+        text-transform: initial;
+    }
+
+    .infotext {
+        margin: 40px 0 0;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+.studentstable__content-row {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px 0;
+    margin: 0;
+    border-top: 1px solid rgba(#fff, .4);
+
+    &:last-of-type {
+        border-bottom: 1px solid rgba(#fff, .4);
+    }
+
+    p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 115%;
+        margin: 0;
+    }
+
+    li {
+        width: 340px;
+
+        p {
+            width: 90%;
+        }
     }
 }
 
@@ -344,9 +397,35 @@
 
 //  ADAPTIVE --- //
 @media (max-width:1199.8px) {
+    .studentstable__content-row {
+        padding: 30px 0;
+
+        li {
+            width: 30%;
+        }
+    }
+
+    .studentstable__content-row p {
+        font-size: 20px;
+    }
+
+    .studentstable {
+        padding: 80px 0;
+    }
+
+    .studentstable .secttitle {
+        margin-bottom: 60px;
+    }
+
+
+    .page-descr .secttitle {
+        margin-bottom: 50px;
+    }
+
     .page-info.study {
         padding: 0px 0 100px;
     }
+
     .tablesect.study .tablesect__content-head p {
         font-size: 20px;
     }
@@ -407,6 +486,9 @@
 }
 
 @media (max-width:991.8px) {
+    .studentstable__content-row p {
+        font-size: 18px;
+    }
 
     .tablesect.study .tablesect__content-head li,
     .tablesect.study .tablesect__content-row li {
@@ -464,6 +546,32 @@
 }
 
 @media (max-width:767.8px) {
+    .studentstable .infotext {
+        font-size: 18px;
+    }
+    .studentstable {
+        padding: 65px 0;
+    }
+
+    .studentstable .secttitle {
+        margin-bottom: 40px;
+    }
+
+    .studentstable__content-row {
+        flex-wrap: wrap;
+        padding: 0;
+        border: none;
+
+        &:last-of-type {
+            border-bottom: 1px solid rgba(#fff, .4);
+        }
+
+        li {
+            width: 100%;
+            padding: 20px;
+            border-top: 1px solid rgba(#fff, .4);
+        }
+    }
 
     .tablesect.study .tablesect__content-head li:first-child,
     .tablesect.study .tablesect__content-row li:first-child {
@@ -475,15 +583,19 @@
         width: 100%;
         padding-right: 0px;
     }
-    .tablesect.study .tablesect__content-row{
+
+    .tablesect.study .tablesect__content-row {
         flex-direction: column;
         padding: 30px 0;
-        li{
+
+        li {
             display: flex;
             margin-bottom: 20px;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
+
             span {
                 display: block;
                 width: 50%;
@@ -507,6 +619,7 @@
         padding-right: 0;
         width: 100%;
     }
+
     .tablesect.study .tablesect__content-row li span {
         display: block;
     }
@@ -587,16 +700,24 @@
 }
 
 @media (max-width:575.8px) {
+    .studentstable .infotext {
+        font-size: 16px;
+    }
+    .page-descr .secttitle {
+        margin-bottom: 30px;
+    }
     .page-info.study {
         padding: 0px 0 60px;
     }
-    .tablesect.study .tablesect__content-row{
-        li{
+
+    .tablesect.study .tablesect__content-row {
+        li {
             span {
                 padding-right: 20px;
             }
         }
     }
+
     .studysect {
         padding: 50px 0 0;
     }
