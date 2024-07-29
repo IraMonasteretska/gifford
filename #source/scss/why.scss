@@ -79,6 +79,40 @@
     }
 }
 
+.absuct {
+    padding: 130px 0 85px;
+    background: rgba(48, 64, 120, 1);
+
+    .imgwrapper {
+        img {
+            max-width: 642px;
+            width: 100%;
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 115%;
+        margin-bottom: 40px;
+    }
+
+    .descr {
+        p {
+            font-size: 17px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 140%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 @media(max-width:1599.8px) {
 
     .sertgetstarted.why .getstartedicbox {
@@ -91,6 +125,10 @@
 
     .learnsupp__lists .listblock p {
         font-size: 17px;
+    }
+
+    .absuct .descr p {
+        font-size: 16px;
     }
 
 }
@@ -114,6 +152,17 @@
         font-size: 16px;
     }
 
+    .absuct {
+        .row.align-items-center {
+            align-items: flex-start !important;
+        }
+    }
+
+    .absuct .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -123,6 +172,18 @@
 
     .learnsupp {
         padding: 100px 0;
+    }
+
+    .absuct {
+        padding: 100px 0;
+    }
+
+    .absuct .imgwrapper {
+        margin-bottom: 50px;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -144,6 +205,18 @@
         padding: 60px 0;
     }
 
+    .absuct {
+        padding: 60px 0;
+    }
+
+    .absuct .title {
+        font-size: 21px;
+        line-height: 140%;
+    }
+
+    .absuct .imgwrapper {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width:575.8px) {
