@@ -927,7 +927,7 @@
     }
 
     .herosect__descr h1 {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .herosect__descr h1 .litttext {
@@ -937,6 +937,17 @@
 
     .herosect__descr .herosect__descrbtns .fbtn {
         margin-bottom: 20px;
+    }
+
+    .herosect__descr .herosect__descrbtns {
+        flex-wrap: wrap;
+
+
+        .fbtn,
+        .sbtn {
+            max-width: 300px;
+            flex: initial;
+        }
     }
 
     .lmore {
@@ -1046,7 +1057,7 @@
         height: 210px;
     }
 
-    
+
 
 
 
@@ -1055,7 +1066,7 @@
 @media(max-width:360.8px) {
 
     .herosect__descr h1 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .herosect__descr h1 .litttext {
